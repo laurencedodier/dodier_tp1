@@ -33,7 +33,7 @@ export class AnimLettre {
         let i = 0;
         let elmConteneur = this.creerElement(this.elmParent, 'section', '','mot')
             for (let uneLettre of lesLettres){
-            let elmLettres = this.creerElement(elmConteneur, 'div', uneLettre, '');
+            let elmLettres = this.creerElement(elmConteneur, 'div', uneLettre, 'mot');
 
             elmLettres.style.animationDelay = (i * 0.5) + "s";
             i++;
@@ -41,7 +41,7 @@ export class AnimLettre {
         }
        
         /* On garde une référence sur la fonction terminerIntro */
-       // let refTerminerIntro = this.terminerIntro.bind(this)
+        let refTerminerIntro = this.terminerIntro.bind(this)
        // elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this))
     }
 
