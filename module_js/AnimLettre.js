@@ -19,7 +19,7 @@ export class AnimLettre {
         this.lesLettres = lesLettres;
     
         this.elmParent = elementParent
-        this.anim_Lettre()
+        this.anim_Lettre(this.lesLettres)
         this.fonction = fonction
     }
 
@@ -31,13 +31,13 @@ export class AnimLettre {
         const tabCouleur = ['#CC231E', '#235E6F' , '#009900', '#34A65F', '#0F8A5F','#F5624D']
         console.log('introduction')
         let i = 0;
-        let elmConteneur = this.creerElement(this.elmParent, 'section','','mot')
-            for(let uneLettre of lesLettres){
-                let elmLettres = this.creerElement(elmConteneur, 'div', uneLettre, 'mot')
-                uneLettre.style.animationDelay = (i++ * 0.5) + "s";
-                elmLettres.style.color = tabCouleur[(i++)%7]
-            }
+        let elmConteneur = this.creerElement(this.elmParent, 'section', '','mot')
+            for (let uneLettre of lesLettres){
+            let elmDiv = this.creerElement(elmConteneur, 'div', uneLettre, '');
 
+            elmDiv.style.animationDelay = (i * 0.5) + "s";
+            elmDiv.style.color = tabCouleur[(i++)%7];
+        }
        
         /* On garde une référence sur la fonction terminerIntro */
        // let refTerminerIntro = this.terminerIntro.bind(this)
