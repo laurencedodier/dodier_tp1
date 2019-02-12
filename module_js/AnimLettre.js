@@ -29,15 +29,17 @@ export class AnimLettre {
         Les éléments seront intégré dans le conteneur elmParent
         */
         console.log('introduction')
-        let elmConteneur = this.creerElement(this.elmParent,
-            'section',
-            '',
-            'mot')
+        let i = 0;
+        let elmConteneur = this.creerElement(this.elmParent, 'section','','mot')
+            for(let uneLettre of lesLettres){
+                let elmLettres = this.creerElement(elmConteneur, 'div', uneLettre, '')
+                uneLettre.style.animationDelay = (i++ * 0.5) + "s";
+            }
 
        
         /* On garde une référence sur la fonction terminerIntro */
-        let refTerminerIntro = this.terminerIntro.bind(this)
-        elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this))
+       // let refTerminerIntro = this.terminerIntro.bind(this)
+       // elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this))
     }
 
     creerElement(elmParent, balise, contenu, classCSS) {
