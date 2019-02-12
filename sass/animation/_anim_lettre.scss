@@ -15,7 +15,7 @@
 @keyframes animationLettre {
     from {
         /* opacity:  0; */
-        transform: translateY(-75vw) rotate(180deg) scale(1);
+        transform: translateY(-75vw) rotate(360deg) scale(1);
         animation-timing-function: cubic-bezier(.8, .01, .97, .19);
     }
 

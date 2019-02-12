@@ -28,12 +28,14 @@ export class AnimLettre {
         /* Création des élément DOM qui seront animés. 
         Les éléments seront intégré dans le conteneur elmParent
         */
+        const tabCouleur = ['#CC231E', '#235E6F' , '#009900', '#34A65F', '#0F8A5F','#F5624D']
         console.log('introduction')
         let i = 0;
         let elmConteneur = this.creerElement(this.elmParent, 'section','','mot')
             for(let uneLettre of lesLettres){
-                let elmLettres = this.creerElement(elmConteneur, 'div', uneLettre, '')
+                let elmLettres = this.creerElement(elmConteneur, 'div', uneLettre, 'mot')
                 uneLettre.style.animationDelay = (i++ * 0.5) + "s";
+                elmLettres.style.color = tabCouleur[(i++)%7]
             }
 
        
