@@ -32,33 +32,9 @@ export class AnimLettre {
         let elmConteneur = this.creerElement(this.elmParent,
             'section',
             '',
-            'introduction')
+            'mot')
 
-        let elmPrincipale = this.creerElement(elmConteneur,
-            'div',
-            this.titrePrincipal,
-            'rectangle')
-
-        let elmSecondaire = this.creerElement(elmConteneur,
-            'div',
-            this.titreSecondaire,
-            'rectangle')
-
-
-        let elmTernaire = this.creerElement(elmConteneur,
-            'div',
-            this.titreTernaire,
-            'rectangle')
-
-        let elmDescription = this.creerElement(elmConteneur,
-            'div',
-            this.description,
-            'rectangle')
-
-        let elmBouton = this.creerElement(elmConteneur,
-            'button',
-            'Commencer',
-            'bouton')
+       
         /* On garde une référence sur la fonction terminerIntro */
         let refTerminerIntro = this.terminerIntro.bind(this)
         elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this))
