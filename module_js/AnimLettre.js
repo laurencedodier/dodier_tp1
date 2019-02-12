@@ -51,8 +51,8 @@ export class AnimLettre {
         if (contenu != '') {
             noeud.innerHTML = contenu
         }
-        if (classCss != '') {
-            noeud.classList.add(classCss);
+        if (classCSS != '') {
+            noeud.classList.add(classCSS);
         }
         
         elmParent.appendChild(noeud)
