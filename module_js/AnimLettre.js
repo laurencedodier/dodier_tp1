@@ -24,7 +24,7 @@ export class AnimLettre {
     }
 
 
-    anim_Lettre() {
+    anim_Lettre(lesLettres) {
         /* Création des élément DOM qui seront animés. 
         Les éléments seront intégré dans le conteneur elmParent
         */
