@@ -701,6 +701,121 @@ li {
 }
 
 /*--------------------------------------------------------------
+# global
+--------------------------------------------------------------*/
+/*---------------------------------------------------------------
+
+----------------------------------------------------------------*/
+header {
+  overflow: hidden;
+}
+
+/* Hero background images */
+#hero-1 {
+  background-image: url(../img/montagne.jpg);
+}
+
+/* Duotone effect */
+.duotone {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: all 1.35s ease-in-out;
+  transition: all 1.35s ease-in-out;
+}
+
+/* ======== GRANDES ÉCRANS ============ */
+@media (min-width: 917px) {
+  /* The brightest duotone color */
+  .darken::before {
+    background-color: #f1e0de;
+  }
+  /* The darkest duotone color */
+  .lighten::after {
+    background-color: #eee5e9;
+  }
+  /* Duotone effect */
+  .duotone {
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    width: 100vw;
+    height: 95vh;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+    -webkit-transition: all 1.35s ease-in-out;
+    transition: all 1.35s ease-in-out;
+  }
+  .duotone::before,
+  .duotone::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .duotone::before {
+    mix-blend-mode: multiply;
+  }
+  .duotone::after {
+    mix-blend-mode: color;
+  }
+  /* Removal of duotone and sizing on hover/touch */
+  .duotone:hover,
+  .duotone:hover::before,
+  .duotone:hover::after,
+  .duotone:focus,
+  .duotone:focus::before,
+  .duotone:focus::after {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+footer {
+  background-color: #393D52;
+}
+
+#fontAwsome {
+  width: 220px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: auto;
+  margin: 0 auto;
+  color: #EEE5E9;
+  font-size: 1.3rem;
+}
+
+#fontAwsome i {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#fontAwsome i:hover {
+  color: #A6808C;
+  font-size: 1.2rem;
+}
+
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # animation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
