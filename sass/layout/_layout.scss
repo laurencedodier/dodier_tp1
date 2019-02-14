@@ -1,190 +1,260 @@
+/*
+Couleurs
+Mauve foncé : 393D52
+Rose foncé : A6808C
+Rose/beige pale : F1E0DE
+Mauve pale : EEE5E9
+Blanc : FFFFFF
+
+
+font-family: 'Thasadith', sans-serif;
+font-family: 'GFS Didot', serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-	margin : 10px;
-	max-width: 100vw;
-	min-height: 100vh;
-	/*Conteneur flex en colonne*/
-	display: flex;
-	flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    background-color: #F1E0DE;
+    /* background: #EEE5E9 url(../img/point.png) repeat;
+    background-size: 4px 4px;*/
+
 }
 
-.global {
-	max-width: 100vw;
-	/*Propriété comme item flex*/
-	flex: 1 0 100%;
-	/*Conteneur flex en rangée*/
-	display: flex;
-	/*Poussée vers la gauche pour ne pas voir le menu*/
-	transform: translateX(-100%);
-	/*Effet de transition sur la transformation*/
-	transition: transform 1s;
-	/*	overflow-x: hidden; */
-	}
 
-	.boutonBurger {
-		background: linear-gradient(to bottom, #E84545 0%, #E84545 20%, transparent 20%, transparent 40%, #E84545 40%, #E84545 60%, transparent 60%, transparent 80%, #E84545 80%, #E84545 100%);
-		height: 48px;
-		width: 48px;
-		margin: 1%;
-		display: inline-block;
-		cursor: pointer;
-		/*Effet de transition sur la rotation*/
-		transition: transform 1s;
-	}
-
-	.menu {
-		background-color : $color__menu-nav;
-		text-align: center;
-		/*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
-		width: 100vw;
-		/*Propriété comme item flex - ne peut rétrécir*/
-		flex: 1 0 100%;
-		/*Contexte flex en colonne pour ses enfants*/
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		overflow-x: hidden;
-		overflow-y: auto;
-	}
-
-
-
-		#chkBoutonBurger:checked~.global {
-			transform: translateX(0%);
-		}
-
-		#chkBoutonBurger:checked~.boutonBurger {
-			transform: rotate(90deg);
-		}
-
-		#chkBoutonBurger {
-			display: none;
-		}
-
-
-
-.sidebar {
-	grid-area: sidebar;
+h1 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 8px;
+    margin-left: 1rem;
+    width: 100%;
+    height: auto;
+    color: #EEE5E9;
+    position: relative;
+    display: inline-block;
+    top: -200px;
 }
 
-.sidebar2 {
-	grid-area: sidebar2;
+h2 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    margin-left: 1rem;
+    width: 100%;
+    height: auto;
+    color: #EEE5E9;
+    position: relative;
+    display: inline-block;
+    top: -210px;
 }
 
-.content {
-	grid-area: content;
+header {
+    overflow: hidden;
 }
 
-.header {
-	grid-area: header;
+/* Hero background images */
+#hero-1 {
+    background-image: url(../img/montagne.jpg);
 }
 
-.footer {
-	grid-area: footer;
+/* Duotone effect */
+.duotone {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transform: scale(1.01);
+    transition: all 1.35s ease-in-out;
 }
 
-.conteneur {
-	background-color: #fff;
-	color: #444;
-}
-/* conteneur est un élément flex et en même temps un conteneur grid */
-.conteneur {
-		/*Sa largeur est fixée à 100%*/
-		width: 100vw;
-		/*Propriété comme item flex - ne peut rétrécir*/
-		flex: 1 0 100%;
-		/*Conteneur flex en colonne pour ses enfants*/
-		flex-flow: column nowrap;
-		overflow-x: hidden;
-		overflow-y: auto;
-
-		display: grid;
-		width : 100vw;
-		grid-gap: 1em;
-		grid-template-areas:
-			"header"
-			"sidebar"
-			"content"
-			"sidebar2"
-			"footer"
+footer {
+    background-color: #393D52;
 }
 
-@media only screen and (min-width: 500px) {
-	.conteneur {
+#fontAwsome {
+    width: 220px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: auto;
+    margin: 0 auto;
+    color: #EEE5E9;
+    font-size: 1.3rem;
 
-		grid-template-columns: 20% auto;
-		grid-template-areas:
-			"header   header"
-			"sidebar  content"
-			"sidebar2 sidebar2"
-			"footer   footer";
-
-		min-width: 500px;
-	}
 }
 
-@media only screen and (min-width: 900px) {
-
-	.boutonBurger {
-		display: none
-	}
-
-	.global {
-		/* Placer à sa potition d'origine */
-		transform: translateX(0%);
-		/*Mettre le contenu en colonne*/
-		flex-direction: column;
-	}
-
-	.menu {
-		/*Propriété comme item flex - ne peut s'étirer en hauteur*/
-		width: 96vw;
-		margin-bottom: 10px;
-		border-radius : 10px;
-		flex: 0 0 100%;
-
-		/*Affichage du menu en rangée*/
-		flex-direction: row;
-		justify-content: space-between;
-
-		 a {
-				border: none;
-				border-left: 1px solid white;
-				/*Propriété comme item flex - peut s'étirer en largeur*/
-				flex: 1 0 auto;
-		
-
-		 &:first-child {
-				border-top: none;
-			}
-		 }	
-
-	}
-
-	.conteneur {
-		grid-gap: 20px;
-		grid-template-columns: 120px auto 120px;
-		grid-template-areas:
-			"header  header  header"
-			"sidebar content sidebar2"
-			"footer  footer  footer";
-		max-width: 100%;
-	}
+#fontAwsome i {
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
-.box {
-	background-color: #444;
-	color: #fff;
-	border-radius: 5px;
-	padding: 10px;
-	font-size: 150%;
+
+#fontAwsome i:hover {
+    color: #A6808C;
+    font-size: 1.2rem;
 }
 
-.header,
-.footer {
-	background-color: #999;
+h3 {
+    color: #393D52;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 2px solid #A6808C;
+    /* top right bottom left*/
+    padding: 10px 0px 10px 50px;
+
 }
 
-.sidebar2 {
-	background-color: #ccc;
-	color: #444;
+#projets,
+#propos {
+    margin-bottom: 50px;
+}
+
+#contenu {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* ======== TABLETTES ============ */
+@media (min-width:576px) and (max-width:916px) {}
+
+/* ======== GRANDES ÉCRANS ============ */
+@media (min-width:917px) {
+    h1 {
+        letter-spacing: 12px;
+        margin-left: 1rem;
+        font-size: 2rem;
+        top: -120px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        top: -130px;
+    }
+
+    /* The brightest duotone color */
+    .darken::before {
+        background-color: rgba(241, 224, 222, 1);
+    }
+
+    /* The darkest duotone color */
+    .lighten::after {
+        background-color: rgba(238, 229, 233, 1);
+    }
+
+    /* Duotone effect */
+    .duotone {
+        filter: blur(2px);
+        width: 100vw;
+        height: 95vh;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        transform: scale(1.01);
+        transition: all 1.35s ease-in-out;
+    }
+
+    .duotone::before,
+    .duotone::after {
+        content: '';
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        transition: all .5s ease-in-out;
+    }
+
+    .duotone::before {
+        mix-blend-mode: multiply;
+    }
+
+    .duotone::after {
+        mix-blend-mode: color;
+    }
+
+    /* Removal of duotone and sizing on hover/touch */
+    .duotone:hover,
+    .duotone:hover::before,
+    .duotone:hover::after,
+    .duotone:focus,
+    .duotone:focus::before,
+    .duotone:focus::after {
+        filter: blur(0px);
+        transform: scale(1.03);
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+
+    .gauche {
+        /* background-color: aqua;*/
+        height: auto;
+        width: 49%;
+        margin-right: 1%;
+    }
+
+    .droite {
+        /* background-color: coral;*/
+        height: auto;
+        width: 49%;
+        margin-left: 1%;
+    }
+
+    .gauche img,
+    .droite img {
+        margin-top: 2%;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        /* IE 10 */
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 5px;
+    }
+
+    .overlay {
+        position: absolute;
+        left: 0%;
+        left: 0%;
+        height: auto;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+    }
+
+    .projet1 {
+        height: auto;
+        width: 100%;
+        
+      /*  background-color: aqua;*/
+    }
+
+    .projet1:hover .overlay {
+        opacity: 1;
+    }
+
+    .textHover  {
+        color: white;
+        font-size: 20px;
+      /*  transform: translate(100%, -700%);*/
+        text-align: center;
+    }
+
+
 }
