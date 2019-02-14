@@ -37,7 +37,7 @@ export class AnimLettre {
 
             elmLettres.style.animationDelay = (i * 0.5) + "s";
             i++;
-            elmLettres.style.color = tabCouleur[(i++)%7];
+            elmLettres.style.color = tabCouleur[(i++)%6];
         }
        
         /* On garde une référence sur la fonction terminerIntro */
