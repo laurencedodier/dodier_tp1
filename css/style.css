@@ -1180,6 +1180,23 @@ h3 {
   .droite img {
     margin-top: 4%;
   }
+  .gaucheTexte {
+    /* background-color: aqua;*/
+    height: auto;
+    width: 59%;
+    margin-right: 1%;
+  }
+  .droiteImg {
+    /* background-color: coral;*/
+    height: auto;
+    width: 35%;
+    padding-left: 5%;
+  }
+  .droiteImg img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
   .row {
     display: -ms-flexbox;
     /* IE 10 */
