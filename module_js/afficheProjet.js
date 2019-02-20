@@ -1,9 +1,21 @@
+(function(){
+    var projet = document.querySelectorAll(".projet");
+
+    projet[0].addEventListener("click", function(){afficheProjet("devJeu")});
+    projet[1].addEventListener("click", function(){afficheProjet("progWeb")});
+
+    var fermer = document.querySelector(".fermer");
+    fermer.addEventListener("click", function(){fermerProjet()});
+
+
+})()
+
 function afficheProjet(x){
     var titre = document.querySelector(".titre");
     var sousTitre = document.querySelector(".sousTitre");
     var parag1 = document.querySelector(".parag1");
-    var parag2 = document.querySelector("parag2");
-    var parag3 = document.querySelector("parag3");
+    var parag2 = document.querySelector(".parag2");
+    var parag3 = document.querySelector(".parag3");
     var oImg = document.querySelector("#img1");
 
     document.querySelector("#presentation").style.display="block";
@@ -27,4 +39,8 @@ function afficheProjet(x){
             break;
     }
 
+}
+
+function fermerProjet(){
+    document.querySelector("#presentation").style.display="none";
 }
