@@ -1250,13 +1250,19 @@ h3 {
   .gaucheTexte {
     /* background-color: aqua;*/
     height: auto;
-    width: 59%;
+    -webkit-box-flex: 4;
+        -ms-flex: 4 0 0px;
+            flex: 4 0 0;
+    /* width: 59%;*/
     margin-right: 1%;
   }
   .droiteImg {
     /* background-color: coral;*/
     height: auto;
-    width: 35%;
+    -webkit-box-flex: 2;
+        -ms-flex: 2 0 0px;
+            flex: 2 0 0;
+    /* width: 35%;*/
     padding-left: 5%;
   }
   .droiteImg img {
