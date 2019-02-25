@@ -19,7 +19,7 @@
         this.lesMots = lesMots;
 		//Appeler la méthode d'instance pour créer et afficher le mot
         this.creerMot();
-        console.log('fonction mot');
+        console.log(this.posX , this.posY);
 	 }
 
 	 //Créer la méthode creerMot pour un objet de type Mot

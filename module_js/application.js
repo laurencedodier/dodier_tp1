@@ -19,8 +19,8 @@
 	function mettreDesMots(evt) {
 		console.log(evt);
 		//Identifier où le mousedown a eu lieu dans la section
-		var posX = evt.clientX - 110;
-		var posY = evt.clientY - 180;
+		var posX = evt.pageX - laSection.offsetLeft;
+		var posY = evt.pageY - laSection.offsetTop;
 		
 		var lesMots = ["Perseverance", "Déterminé", "Curieuse", "Ouverte d'esprit", "Empathique", "Ambitieuse", "Autonome", "Humaine", "Leader", "Minutieuse", "Positive", "Souriante"];
         
