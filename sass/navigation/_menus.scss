@@ -23,7 +23,7 @@ font-family: 'Raleway', sans-serif;
     height: 100vh;
     padding-right: 5%;
 
-    background-color: #393d52;
+    background-color: #523843;
     /*Effet de transition*/
     transition: height 0.5s;
     overflow: auto;
@@ -40,7 +40,7 @@ font-family: 'Raleway', sans-serif;
 
 .menu a {
     text-decoration: none;
-    color: #EEE5E9;
+    color: #fff;
     border-bottom: 1px solid white;
     font-size: 2.3rem;
     /*Au point de départ on met tous les éléments invisibles*/
@@ -80,13 +80,13 @@ li {
 .ligne {
     width: 100%;
     height: 5px;
-    background-color: #393d52;
+    background-color: #523843;
     transition: transform 0.5s, opacity 0.5s;
 }
 
 .croix.estActif .ligne:first-child {
     transform: translateY(9px) rotate(45deg);
-    background-color: #EEE5E9;
+    background-color: #fff;
 }
 
 .croix.estActif .ligne:nth-child(2) {
@@ -95,7 +95,7 @@ li {
 
 .croix.estActif .ligne:last-child {
     transform: translateY(-15px) rotate(-45deg);
-    background-color: #EEE5E9;
+    background-color: #fff;
 }
 
 /* Contrôle de l'apparition du menu*/
@@ -109,13 +109,13 @@ li {
     from {
         clip-path: circle(0.0% at 100% 0);
         opacity: 0.2;
-        background-color: #393d52;
+        background-color: #523843;
     }
 
     50% {
         clip-path: circle(50% at 100% 0);
         opacity: 0.5;
-        background-color: #393d52;
+        background-color: #523843;
     }
 
     to {
@@ -160,13 +160,13 @@ li {
         from {
             clip-path: circle(0.0% at 100% 0);
             opacity: 0.2;
-            background-color: #4C3B4D;
+            background-color: #523843;
         }
 
         50% {
             clip-path: circle(20% at 100% 0);
             opacity: 0.5;
-            background-color: #4C3B4D;
+            background-color: #523843;
         }
 
         to {

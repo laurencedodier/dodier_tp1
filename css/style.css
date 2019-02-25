@@ -487,7 +487,7 @@ font-family: 'Raleway', sans-serif;
   width: 100%;
   height: 100vh;
   padding-right: 5%;
-  background-color: #393d52;
+  background-color: #523843;
   /*Effet de transition*/
   -webkit-transition: height 0.5s;
   transition: height 0.5s;
@@ -511,7 +511,7 @@ font-family: 'Raleway', sans-serif;
 
 .menu a {
   text-decoration: none;
-  color: #EEE5E9;
+  color: #fff;
   border-bottom: 1px solid white;
   font-size: 2.3rem;
   /*Au point de départ on met tous les éléments invisibles*/
@@ -557,7 +557,7 @@ li {
 .ligne {
   width: 100%;
   height: 5px;
-  background-color: #393d52;
+  background-color: #523843;
   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
@@ -567,7 +567,7 @@ li {
 .croix.estActif .ligne:first-child {
   -webkit-transform: translateY(9px) rotate(45deg);
           transform: translateY(9px) rotate(45deg);
-  background-color: #EEE5E9;
+  background-color: #fff;
 }
 
 .croix.estActif .ligne:nth-child(2) {
@@ -577,7 +577,7 @@ li {
 .croix.estActif .ligne:last-child {
   -webkit-transform: translateY(-15px) rotate(-45deg);
           transform: translateY(-15px) rotate(-45deg);
-  background-color: #EEE5E9;
+  background-color: #fff;
 }
 
 /* Contrôle de l'apparition du menu*/
@@ -591,13 +591,13 @@ li {
     -webkit-clip-path: circle(0% at 100% 0);
             clip-path: circle(0% at 100% 0);
     opacity: 0.2;
-    background-color: #393d52;
+    background-color: #523843;
   }
   50% {
     -webkit-clip-path: circle(50% at 100% 0);
             clip-path: circle(50% at 100% 0);
     opacity: 0.5;
-    background-color: #393d52;
+    background-color: #523843;
   }
   to {
     -webkit-clip-path: circle(76.3% at 100% 0);
@@ -609,13 +609,13 @@ li {
     -webkit-clip-path: circle(0% at 100% 0);
             clip-path: circle(0% at 100% 0);
     opacity: 0.2;
-    background-color: #393d52;
+    background-color: #523843;
   }
   50% {
     -webkit-clip-path: circle(50% at 100% 0);
             clip-path: circle(50% at 100% 0);
     opacity: 0.5;
-    background-color: #393d52;
+    background-color: #523843;
   }
   to {
     -webkit-clip-path: circle(76.3% at 100% 0);
@@ -657,13 +657,13 @@ li {
       -webkit-clip-path: circle(0% at 100% 0);
               clip-path: circle(0% at 100% 0);
       opacity: 0.2;
-      background-color: #4C3B4D;
+      background-color: #523843;
     }
     50% {
       -webkit-clip-path: circle(20% at 100% 0);
               clip-path: circle(20% at 100% 0);
       opacity: 0.5;
-      background-color: #4C3B4D;
+      background-color: #523843;
     }
     to {
       -webkit-clip-path: circle(46.3% at 100% 0);
@@ -675,13 +675,13 @@ li {
       -webkit-clip-path: circle(0% at 100% 0);
               clip-path: circle(0% at 100% 0);
       opacity: 0.2;
-      background-color: #4C3B4D;
+      background-color: #523843;
     }
     50% {
       -webkit-clip-path: circle(20% at 100% 0);
               clip-path: circle(20% at 100% 0);
       opacity: 0.5;
-      background-color: #4C3B4D;
+      background-color: #523843;
     }
     to {
       -webkit-clip-path: circle(46.3% at 100% 0);
@@ -791,7 +791,7 @@ header {
 }
 
 footer {
-  background-color: #393D52;
+  background-color: #523843;
 }
 
 #fontAwsome {
@@ -1091,7 +1091,7 @@ font-family: 'Raleway', sans-serif;
 
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #F1E0DE;
+  background-color: #fff;
   /* background: #EEE5E9 url(../img/point.png) repeat;
     background-size: 4px 4px;*/
 }
@@ -1104,7 +1104,7 @@ h1 {
   margin-left: 1rem;
   width: 100%;
   height: auto;
-  color: #EEE5E9;
+  color: #fff;
   position: relative;
   display: inline-block;
   top: -200px;
@@ -1118,17 +1118,17 @@ h2 {
   margin-left: 1rem;
   width: 100%;
   height: auto;
-  color: #EEE5E9;
+  color: #fff;
   position: relative;
   display: inline-block;
   top: -210px;
 }
 
 h3 {
-  color: #393D52;
+  color: #523843;
   width: 80%;
   margin: 0 auto;
-  border-bottom: 2px solid #A6808C;
+  border-bottom: 2px solid #523843;
   /* top right bottom left*/
   padding: 10px 0px 10px 50px;
 }
@@ -1164,14 +1164,14 @@ h3 {
 }
 
 #boite {
-  color: #393d52;
+  color: #523843;
   z-index: 91;
   position: fixed;
   top: 20%;
   left: 15%;
   height: auto;
   width: 70%;
-  background-color: #F1E0DE;
+  background-color: #fff;
 }
 
 #boite h2 {
@@ -1202,7 +1202,7 @@ h3 {
 .boutonX {
   width: 100%;
   height: 5px;
-  background-color: #EEE5E9;
+  background-color: #523843;
 }
 
 .boutonX:first-child {
@@ -1302,7 +1302,7 @@ section {
   z-index: 1000;
   /*Position*/
   position: absolute;
-  color: #A6808C;
+  color: #523843;
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   -webkit-transform-origin: left center;
