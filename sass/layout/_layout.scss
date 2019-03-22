@@ -65,6 +65,7 @@ h3 {
 
 }
 
+
 #projets,
 #propos {
     margin-bottom: 50px;
@@ -293,7 +294,7 @@ $glow-color:rgb(255, 128, 217);
 .label {
   font-family: 'Raleway', sans-serif;
   color:#393D52;
-  font-size:1.3rem;
+  font-size:1.2rem;
 }
 
 // animations
@@ -454,9 +455,9 @@ body {
     margin-bottom: 60px;
     
     .container {
-      padding:10px;
+      padding:5px;
       > * {
-        margin-bottom:2px;
+        margin-bottom:3px;
       }
     } 
   }
