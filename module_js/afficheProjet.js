@@ -61,18 +61,18 @@ function afficheProjet(x){
         case "1droite":
             titre.innerHTML = "Sphaera ⋄ Site Web";
             sousTitre.innerHTML = "Developpement de jeu";
-            parag1.innerHTML = "parag1";
-            parag2.innerHTML = "parag2";
-            parag3.innerHTML = "parag3";
+            parag1.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
+            parag2.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
+            parag3.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
             parag4.innerHTML = "Technologie utilisée : HTML5, CSS3, JavaScript, PhotoShop";
             break;
 
         case "2droite":
             titre.innerHTML = "Sphaera ⋄ Jeu";
             sousTitre.innerHTML = "Developpement de jeu";
-            parag1.innerHTML = "parag1";
-            parag2.innerHTML = "parag2";
-            parag3.innerHTML = "parag3";
+            parag1.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
+            parag2.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
+            parag3.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
             parag4.innerHTML = "Technologie utilisée : Unity 3D, C#";
             
            // oImg.src = oImgLondres;
@@ -81,9 +81,9 @@ function afficheProjet(x){
         case "3droite":
             titre.innerHTML = "ChickenRun";
             sousTitre.innerHTML = "Assemblage de jeu";
-            parag1.innerHTML = "parag1";
-            parag2.innerHTML = "parag2";
-            parag3.innerHTML = "parag3";
+            parag1.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
+            parag2.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
+            parag3.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
             parag4.innerHTML = "Technologie utilisée : Unity 3D, C#";
             break;
     }
