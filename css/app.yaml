@@ -1,0 +1,19 @@
+runtime: php55
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /css
+static_dir: css
+
+-url: /img
+static_dir: img
+
+- url: /module_js
+static_dir: module_js
+
+- url: /.*
+static_files: index.htm
+upload: index.htm
+
+
