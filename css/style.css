@@ -1393,7 +1393,7 @@ section {
 .label {
   font-family: 'Raleway', sans-serif;
   color: #393D52;
-  font-size: 24px;
+  font-size: 1.3rem;
 }
 
 .fill-1 {
@@ -1421,40 +1421,56 @@ section {
 }
 
 .fill-4 {
-  -webkit-animation: fill-1 0.5s ease-out 1.5s;
-          animation: fill-1 0.5s ease-out 1.5s;
+  -webkit-animation: fill-4 0.5s ease-out 1.5s;
+          animation: fill-4 0.5s ease-out 1.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   width: 0%;
 }
 
 .fill-5 {
-  -webkit-animation: fill-2 0.5s ease-out 2s;
-          animation: fill-2 0.5s ease-out 2s;
+  -webkit-animation: fill-5 0.5s ease-out 2s;
+          animation: fill-5 0.5s ease-out 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   width: 0%;
 }
 
 .fill-6 {
-  -webkit-animation: fill-3 0.5s ease-out 2.5s;
-          animation: fill-3 0.5s ease-out 2.5s;
+  -webkit-animation: fill-6 0.5s ease-out 2.5s;
+          animation: fill-6 0.5s ease-out 2.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   width: 0%;
 }
 
 .fill-7 {
-  -webkit-animation: fill-2 0.5s ease-out 3s;
-          animation: fill-2 0.5s ease-out 3s;
+  -webkit-animation: fill-7 0.5s ease-out 3s;
+          animation: fill-7 0.5s ease-out 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   width: 0%;
 }
 
 .fill-8 {
-  -webkit-animation: fill-3 0.5s ease-out 3.5s;
-          animation: fill-3 0.5s ease-out 3.5s;
+  -webkit-animation: fill-8 0.5s ease-out 3.5s;
+          animation: fill-8 0.5s ease-out 3.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 0%;
+}
+
+.fill-9 {
+  -webkit-animation: fill-9 0.5s ease-out 3s;
+          animation: fill-9 0.5s ease-out 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 0%;
+}
+
+.fill-10 {
+  -webkit-animation: fill-10 0.5s ease-out 3.5s;
+          animation: fill-10 0.5s ease-out 3.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   width: 0%;
@@ -1465,7 +1481,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 100%;
+    width: 98%;
   }
 }
 
@@ -1474,7 +1490,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 100%;
+    width: 98%;
   }
 }
 
@@ -1483,7 +1499,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 85%;
+    width: 92%;
   }
 }
 
@@ -1492,7 +1508,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 85%;
+    width: 92%;
   }
 }
 
@@ -1501,7 +1517,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 95%;
   }
 }
 
@@ -1510,7 +1526,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 95%;
   }
 }
 
@@ -1537,7 +1553,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 72%;
   }
 }
 
@@ -1546,7 +1562,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 72%;
   }
 }
 
@@ -1555,7 +1571,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 73%;
   }
 }
 
@@ -1564,7 +1580,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 73%;
   }
 }
 
@@ -1591,7 +1607,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 80%;
+    width: 85%;
   }
 }
 
@@ -1600,19 +1616,47 @@ section {
     width: 0%;
   }
   100% {
+    width: 85%;
+  }
+}
+
+@-webkit-keyframes fill-9 {
+  0% {
+    width: 0%;
+  }
+  100% {
     width: 80%;
   }
 }
 
-.label.one {
-  -webkit-animation: label 0.5s ease-out 0s;
-          animation: label 0.5s ease-out 0s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
+@keyframes fill-9 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 
-.label.two {
+@-webkit-keyframes fill-10 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes fill-10 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+.label.one {
   -webkit-animation: label 0.5s ease-out 0.5s;
           animation: label 0.5s ease-out 0.5s;
   -webkit-animation-fill-mode: forwards;
@@ -1620,17 +1664,25 @@ section {
   opacity: 0;
 }
 
+.label.two {
+  -webkit-animation: label 0.5s ease-out 1s;
+          animation: label 0.5s ease-out 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
 .label.three {
-  -webkit-animation: label 0.5s ease-out 1.0s;
-          animation: label 0.5s ease-out 1.0s;
+  -webkit-animation: label 0.5s ease-out 1.5s;
+          animation: label 0.5s ease-out 1.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
 }
 
 .label.four {
-  -webkit-animation: label 0.5s ease-out 0s;
-          animation: label 0.5s ease-out 0s;
+  -webkit-animation: label 0.5s ease-out 2s;
+          animation: label 0.5s ease-out 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
@@ -1645,14 +1697,30 @@ section {
 }
 
 .label.six {
-  -webkit-animation: label 0.5s ease-out 1.0s;
-          animation: label 0.5s ease-out 1.0s;
+  -webkit-animation: label 0.5s ease-out 1s;
+          animation: label 0.5s ease-out 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
 }
 
 .label.seven {
+  -webkit-animation: label 0.5s ease-out 1.5s;
+          animation: label 0.5s ease-out 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.label.height {
+  -webkit-animation: label 0.5s ease-out 2s;
+          animation: label 0.5s ease-out 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.label.nine {
   -webkit-animation: label 0.5s ease-out 0.5s;
           animation: label 0.5s ease-out 0.5s;
   -webkit-animation-fill-mode: forwards;
@@ -1660,9 +1728,9 @@ section {
   opacity: 0;
 }
 
-.label.height {
-  -webkit-animation: label 0.5s ease-out 1.0s;
-          animation: label 0.5s ease-out 1.0s;
+.label.ten {
+  -webkit-animation: label 0.5s ease-out 1s;
+          animation: label 0.5s ease-out 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
@@ -1671,26 +1739,26 @@ section {
 @-webkit-keyframes label {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   100% {
     opacity: 0.9;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 @keyframes label {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   100% {
     opacity: 0.9;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
@@ -1704,6 +1772,8 @@ html, body {
 
 body .wrapper {
   margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 body .wrapper .container {
@@ -1711,7 +1781,7 @@ body .wrapper .container {
 }
 
 body .wrapper .container > * {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 /* ======== TABLETTES ============ */
@@ -1784,6 +1854,8 @@ body .wrapper .container > * {
     position: relative;
     width: 100%;
     cursor: pointer;
+    -webkit-filter: grayscale(40%);
+            filter: grayscale(40%);
   }
   .image {
     display: block;
@@ -1806,6 +1878,8 @@ body .wrapper .container > * {
   }
   .projet:hover .survol {
     opacity: 1;
+    -webkit-filter: none;
+            filter: none;
   }
   .texte {
     color: #EEE5E9;
