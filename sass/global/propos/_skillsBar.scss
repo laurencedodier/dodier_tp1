@@ -1,5 +1,5 @@
 
-// progress bar appearance
+// Couleurs et apparance
 $background-color:#F1E0DE;
 $bar-empty:rgb(218, 218, 218);
 $bar-color:#A6808C;
@@ -14,7 +14,6 @@ $glow-color:rgb(255, 128, 217);
   position:relative;
   z-index:10;
   background-color:$bar-empty;
-
   
   .progress {
     position:relative;
@@ -53,7 +52,7 @@ $glow-color:rgb(255, 128, 217);
   }
 }
 
-// messages 
+// message
 .label {
   font-family: 'Raleway', sans-serif;
   color:#393D52;
@@ -61,52 +60,52 @@ $glow-color:rgb(255, 128, 217);
 }
 
 // animations
-.fill-1 {
+.fill-1 {//HTML5
   animation:fill-1 0.5s ease-out 0s;
   animation-fill-mode:forwards;    
   width:0%;
 }
-.fill-2 {
+.fill-2 {//CSS3
   animation:fill-2 0.5s ease-out 0.5s;
   animation-fill-mode:forwards;   
   width:0%;
 }
-.fill-3 {
+.fill-3 {//JavaScript
   animation:fill-3 0.5s ease-out 1s;
   animation-fill-mode:forwards;   
   width:0%;
 }
-.fill-4 {
+.fill-4 {//PHP
   animation:fill-4 0.5s ease-out 1.5s;
   animation-fill-mode:forwards;    
   width:0%;
 }
-.fill-5 {
+.fill-5 {//MySQL
   animation:fill-5 0.5s ease-out 2s;
   animation-fill-mode:forwards;   
   width:0%;
 }
-.fill-6 {
+.fill-6 {//Sass
   animation:fill-6 0.5s ease-out 2.5s; 
   animation-fill-mode:forwards;   
   width:0%;
 }
-.fill-7 {
+.fill-7 {//PhotoShop
   animation:fill-7 0.5s ease-out 3s;
   animation-fill-mode:forwards;   
   width:0%;
 }
-.fill-8 {
+.fill-8 {//Illustrator
   animation:fill-8 0.5s ease-out 3.5s;
   animation-fill-mode:forwards;   
   width:0%;
 }
-.fill-9 {
+.fill-9 {//Github
   animation:fill-9 0.5s ease-out 3s;
   animation-fill-mode:forwards;   
   width:0%;
 }
-.fill-10 {
+.fill-10 {//Google Cloud Platform ⋄ App Engine
   animation:fill-10 0.5s ease-out 3.5s;
   animation-fill-mode:forwards;   
   width:0%;
@@ -152,52 +151,53 @@ $glow-color:rgb(255, 128, 217);
   0% { width:0%; }
   100% { width:75%; }
 }
-.label.one {
+
+.label.one { //HTML5
   animation:label 0.5s ease-out 0.5s;
   animation-fill-mode:forwards;   
   opacity:0;
 }
-.label.two {
+.label.two { //CSS3
   animation:label 0.5s ease-out 1s;
   animation-fill-mode:forwards;   
   opacity:0;
 }
-.label.three {
+.label.three { //JavaScript
   animation:label 0.5s ease-out 1.5s;
   animation-fill-mode:forwards;
   opacity:0;
 }
-.label.four {
+.label.four { //PHP
   animation:label 0.5s ease-out 2s;
   animation-fill-mode:forwards;   
   opacity:0;
 }
-.label.five {
+.label.five { //MySQL
   animation:label 0.5s ease-out 0.5s;
   animation-fill-mode:forwards;   
   opacity:0;
 }
-.label.six {
+.label.six { //Sass
   animation:label 0.5s ease-out 1s;
   animation-fill-mode:forwards;
   opacity:0;
 }
-.label.seven {
+.label.seven { //PhotoShop
   animation:label 0.5s ease-out 1.5s;
   animation-fill-mode:forwards;   
   opacity:0;
 }
-.label.height {
+.label.height { //Illustrator
   animation:label 0.5s ease-out 2s;
   animation-fill-mode:forwards;
   opacity:0;
 }
-.label.nine {
+.label.nine { //Github
   animation:label 0.5s ease-out 0.5s;
   animation-fill-mode:forwards;   
   opacity:0;
 }
-.label.ten {
+.label.ten { // Google Cloud Platform ⋄ App Engine
   animation:label 0.5s ease-out 1s;
   animation-fill-mode:forwards;
   opacity:0;
@@ -207,12 +207,10 @@ $glow-color:rgb(255, 128, 217);
   100% { opacity:0.9; transform:translateY(0px); }
 }
 
-// demo layout
+// layout
 html, body { width:100%; height:100%; margin:0;  box-sizing:border-box; }
 body { 
-  
   .wrapper {
-    
     margin:0 auto;
     margin-top: 60px;
     margin-bottom: 60px;

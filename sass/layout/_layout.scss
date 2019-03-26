@@ -13,18 +13,19 @@ font-family: 'Raleway', sans-serif;
 */
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #F1E0DE;
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#F1E0DE), to(#EEE5E9));
     background-image: linear-gradient(to top right, #F1E0DE, #EEE5E9);
-    /* background: #EEE5E9 url(../img/point.png) repeat;
-    background-size: 4px 4px;*/
-
-
 }
 
 h1 {
@@ -66,24 +67,37 @@ h3 {
 }
 
 /* Scroll fire  */
-.projet, .gaucheTexte, .droiteImg, .container, .profil{
+.projet,
+.gaucheTexte,
+.droiteImg,
+.container,
+.profil {
     opacity: 0;
+    -webkit-transform: translateY(50px);
     transform: translateY(50px);
-	transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
-	opacity 0.3s 0.25s ease-out;
+    -webkit-transition: opacity 0.3s 0.25s ease-out,
+        -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
+    transition: opacity 0.3s 0.25s ease-out,
+        -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
+    transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
+        opacity 0.3s 0.25s ease-out;
+    transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
+        opacity 0.3s 0.25s ease-out,
+        -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
 }
-.projet.is-visible, .gaucheTexte.is-visible, .droiteImg.is-visible, .container.is-visible, .profil.is-visible{	
+
+.projet.is-visible,
+.gaucheTexte.is-visible,
+.droiteImg.is-visible,
+.container.is-visible,
+.profil.is-visible {
     opacity: 1;
+    -webkit-transform: none;
     transform: none;
 }
 
-
-
 /* ======== TABLETTES ============ */
-@media (min-width:576px) and (max-width:916px) {
-
-    
-}
+@media (min-width:576px) and (max-width:916px) {}
 
 /* ======== GRANDES ÉCRANS ============ */
 @media (min-width:917px) {
@@ -102,10 +116,11 @@ h3 {
 
     .row {
         display: -ms-flexbox;
-        /* IE 10 */
+        display: -webkit-box;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         padding: 0 5px;
     }
-   
+
 }

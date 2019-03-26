@@ -8,10 +8,11 @@ footer {
 
 #fontAwsome  {
     width: 220px;
+    margin: 0 auto;
     padding-top: 25px;
     padding-bottom: 25px;
     height: auto;
-    margin: 0 auto;
+  
     color: #EEE5E9;
     font-size: 1.3rem;
 
@@ -19,16 +20,16 @@ footer {
 
 #fontAwsome a{
     margin: 0 auto;
-    margin-right: 15px;
     margin-left: 15px;
 }
+
 
 
 #fontAwsome a:hover {
     color: #A6808C;
 }
 
-
+/* Text hover  */
 .tooltip {
     position: relative;
     display: inline-block;

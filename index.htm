@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Doit être en commentaire en serveur local, pour que ce soit fonctionnelle sur gcloud enlever commentaire avant push -->
     <!--base href="https://portfolio-232515.appspot.com/"-->
     
     <title> Laurence Dodier </title>
@@ -14,16 +15,13 @@
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=GFS+Didot|Raleway|Thasadith" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Roboto" rel="stylesheet">
-
     
 </head>
 
 <body>
-        <header>
+        <header> <!-- Page accueil -->
                 <div class="duotone darken lighten" id='hero-1' ontouchstart="" ontouchend="" onmouseover=""></div>
-                <!--div class="column green"><img id="montagne" src="img/montagne.jpg"/></div-->
-                <div id="nom">
-                        
+                <div id="nom">  
                     <h1> LAURENCE DODIER </h1>
                     <h2>Front end web
                         <span class="txt-rotate" data-period="3000" data-rotate='[ "designer.", "developer."]'></span>
@@ -32,7 +30,7 @@
                 </div>
                 
             </header>
-            <div>
+            <div> <!-- Bouton burger -->
                     <input type="checkbox" id="chkBoutonBurger" />
                     <div>
                         <label for="chkBoutonBurger" class="boutonBurger">
@@ -54,12 +52,13 @@
                             <a href="#propos"> À propos </a>
                         </li>
                     </nav>
-            
                 </div>
+
                 <div id="global">
                         <div id="projets">
                             <h3> Projets </h3>
                             <div id="contenu">
+                              <!-- Boite style pop-up qui présente un projet -->
                                 <div id="presentation">
                                     <div id="boite">
                                         <div class="fermer">
@@ -77,13 +76,23 @@
                                                 </p>
                                                 <p class="parag4"> 
                                                 </p>
-                                                <img id="img1" src="" >
+                                                <img id="img1" class="imagePopWeb" src="" >
+                                                <img id="img1" class="imagePopWeb" src="" >
+                                                <img id="img1" class="imagePopWeb" src="" >
+                                                <img id="img1" class="imagePopWeb" src="" >
+                                                <img id="img1" class="imagePopWeb" src="" >
+
+                                                <img id="img1" class="imagePopMobile" src="" >
+                                                <img id="img1" class="imagePopMobile" src="" >
+                                                <img id="img1" class="imagePopMobile" src="" >
+                                                <img id="img1" class="imagePopMobile" src="" >
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Projets en rangé -->
                                 <div class="row">
                                     <div class="gauche">
-                
+                                      <!-- Le fol Espoir ⋄ Site web -->
                                         <div class="projet show-on-scroll">
                                             <img class="image" src="img/folEspoire/web/accueil.jpg" >
                                             <div class="survol">
@@ -96,7 +105,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                
+                                        <!-- Bilboquet ⋄ Refonte du site web -->
                                         <div class="projet show-on-scroll">
                                              <img class="image" src="img/bilbo/design/accueilMobile.png" >
                                              <div class="survol">
@@ -108,6 +117,7 @@
                                                   </div>
                                              </div>
                                         </div>
+                                        <!-- Bilboquet ⋄ Site web -->
                                         <div class="projet show-on-scroll">
                                             <img class="image" src="img/bilbo/Web/accueil.png" >
                                             <div class="survol">
@@ -120,7 +130,7 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                    <!-- Sphaera ⋄ Site web -->
                                     <div class="droite">
                                         <div class="projet show-on-scroll">
                                             <img class="image" src="img/photo1.png" >
@@ -133,6 +143,7 @@
                                                  </div>
                                             </div>
                                        </div>
+                                       <!-- Sphaera ⋄ Jeu  -->
                                        <div class="projet show-on-scroll">
                                         <img class="image" src="img/JeuSphaera/debut.png" >
                                         <div class="survol">
@@ -144,6 +155,7 @@
                                              </div>
                                         </div>
                                    </div>
+                                   <!-- ChickenRun ⋄ Jeu -->
                                    <div class="projet show-on-scroll">
                                         <img class="image" src="img/chickenRunScreenshot/affiche.jpg" >
                                         <div class="survol">
@@ -155,26 +167,26 @@
                                              </div>
                                          </div>  
                                     </div>
-                               
                                     </div>
                                 </div>
                                 </div>
                         </div>
+
+                        <!-- À Propos -->
                         <div id="propos">
                             <h3> À propos </h3>
-                           
                             <div id="contenu">
-                                  
                                 <div class="row">
                                     <div class="gaucheTexte show-on-scroll">
-                
-                
+                                            <!-- Qualités intéractive -->
                                             <h3>
                                                    Découvre mes qualités, appuie n'importe où dans la section ci-dessous !
                                             </h3>
                                             <section id="section"> </section>
 
+                                            <!-- Niveaux de compétences -->
                                             <div class="wrapper">
+                                                <!-- HTML5 -->
                                                 <div class="container show-on-scroll">
                                                   <div class="label one">HTML5</div>
                                                   <div class="progress-bar">
@@ -183,7 +195,7 @@
                                                     </div>
                                                   </div>
                                                 </div>
-                                              
+                                                <!-- CSS3 -->
                                                 <div class="container show-on-scroll">
                                                   <div class="label two">CSS3</div>
                                                   <div class="progress-bar">
@@ -192,7 +204,7 @@
                                                     </div>
                                                   </div>
                                                 </div>
-                                              
+                                                <!-- JavaScript -->
                                                 <div class="container show-on-scroll">
                                                   <div class="label three">JavaScript</div>
                                                   <div class="progress-bar">
@@ -201,7 +213,7 @@
                                                     </div>
                                                   </div>
                                                 </div>
-
+                                                  <!-- PHP -->
                                                 <div class="container show-on-scroll">
                                                     <div class="label four">PHP</div>
                                                     <div class="progress-bar">
@@ -210,7 +222,7 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                
+                                                  <!-- MySQL -->
                                                   <div class="container show-on-scroll">
                                                     <div class="label five">MySQL</div>
                                                     <div class="progress-bar">
@@ -219,7 +231,7 @@
                                                       </div>
                                                     </div>
                                                   </div>
-
+                                                  <!-- Sass -->
                                                   <div class="container show-on-scroll">
                                                     <div class="label six">Sass</div>
                                                     <div class="progress-bar">
@@ -228,7 +240,7 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                              
+                                                    <!-- PhotoShop -->
                                                   <div class="container show-on-scroll">
                                                     <div class="label seven">PhotoShop</div>
                                                     <div class="progress-bar">
@@ -237,7 +249,7 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                
+                                                    <!-- Illustrator -->
                                                   <div class="container show-on-scroll">
                                                     <div class="label height">Illustrator</div>
                                                     <div class="progress-bar">
@@ -246,7 +258,7 @@
                                                       </div>
                                                     </div>
                                                 </div>
-
+                                                  <!-- Github -->
                                                 <div class="container show-on-scroll">
                                                   <div class="label nine">Github</div>
                                                   <div class="progress-bar">
@@ -255,7 +267,7 @@
                                                     </div>
                                                   </div>
                                                 </div>
-
+                                                  <!-- Google Cloud Platform ⋄ App Engine -->
                                                 <div class="container show-on-scroll">
                                                   <div class="label ten">Google Cloud Platform ⋄ App Engine</div>
                                                   <div class="progress-bar">
@@ -264,11 +276,9 @@
                                                     </div>
                                                   </div>
                                                 </div>
-
                                               </div>
-
-
                                     </div>
+
                                     <div class="droiteImg show-on-scroll"> 
                                         <img src="img/laurence.png" alt="Une image">
                                         <h3>Qui suis-je ?</h3>
@@ -293,24 +303,21 @@
                         </div>
                     </div>
                 
-                    <footer>
+                    <footer> <!-- Me rejoindre -->
                             <div id="fontAwsome">
-                               
                                 <a href="https://www.linkedin.com/in/laurence-dodier-a563a7175/" target="blank" class="fab fa-linkedin tooltip">
                                   <span class="tooltiptext">Stalker ;)</span>
                                 </a>
-                              
-
                                 <a href="mailto:laurence.dodier@icloud.com" class="fas fa-envelope tooltip">
                                     <span class="tooltiptext">Contacter :)</span>
                                 </a>
-
                                 <a href="DodierLaurence.pdf" download class="fas fa-file-pdf tooltip">
                                     <span class="tooltiptext">Téléchargez CV </span>
                                 </a>
                             </div>
                         </footer>
     
+                        <!-- Script JavaScript -->
                         <script type='module' src="./module_js/menu.js"></script>
                         <script type='module' src="./module_js/texte.js"></script>
                         <script type='module' src="./module_js/afficheProjet.js"></script>
@@ -318,7 +325,5 @@
                         <script type='module' src="./module_js/application.js"></script>
                         <script type='module' src="./module_js/scrollFire.js"></script>
                        
-                        
-    <!--script type='module' src='./module_js/application.js'></script-->
 </body>
 </html>

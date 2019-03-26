@@ -18,15 +18,17 @@ header {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-transform: scale(1.01);
     transform: scale(1.01);
+    -webkit-transition: all 1.35s ease-in-out;
     transition: all 1.35s ease-in-out;
 }
 
 /* ======== GRANDES ÉCRANS ============ */
 @media (min-width:917px) {
 
-     /* The brightest duotone color */
-     .darken::before {
+    /* The brightest duotone color */
+    .darken::before {
         background-color: rgba(241, 224, 222, 1);
     }
 
@@ -37,6 +39,7 @@ header {
 
     /* Duotone effect */
     .duotone {
+        -webkit-filter: blur(2px);
         filter: blur(2px);
         width: 100vw;
         height: 95vh;
@@ -47,7 +50,9 @@ header {
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        -webkit-transform: scale(1.01);
         transform: scale(1.01);
+        -webkit-transition: all 1.35s ease-in-out;
         transition: all 1.35s ease-in-out;
     }
 
@@ -57,6 +62,7 @@ header {
         width: inherit;
         height: inherit;
         position: absolute;
+        -webkit-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
     }
 
@@ -75,7 +81,9 @@ header {
     .duotone:focus,
     .duotone:focus::before,
     .duotone:focus::after {
+        -webkit-filter: blur(0px);
         filter: blur(0px);
+        -webkit-transform: scale(1.03);
         transform: scale(1.03);
         background-color: rgba(255, 255, 255, 0);
     }

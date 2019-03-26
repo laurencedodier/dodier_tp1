@@ -22,7 +22,7 @@ function afficheProjet(x){
     var parag2 = document.querySelector(".parag2");
     var parag3 = document.querySelector(".parag3");
     var parag4 = document.querySelector(".parag4");
-    var oImg = document.querySelector("#img1");
+    var oImg = document.querySelectorAll("#img1");
 
     document.querySelector("#presentation").style.display="block";
     switch(x){
@@ -34,7 +34,18 @@ function afficheProjet(x){
             parag3.innerHTML = "Lors de scrum, je m'assurais du bon fonctionnement du projet, du progrès de mes collègues, des problèmes ainsi que ce qui restais à réaliser. Nous utilisions la méthode agile sous forme de scrum";
             parag4.innerHTML = "Technologie utilisée : HTML5, CSS3, JavaScript, PHP, phpMyAdmin, PhotoShop, Illustrator ";
 
-           // oImg.src = oImgLondres;
+            oImg[0].src = "../img/folEspoire/web/accueil.jpg";
+            oImg[1].src = "../img/folEspoire/web/menu.png";
+            oImg[2].src = "../img/folEspoire/web/roue.png";
+            oImg[3].src = "";
+            oImg[4].src = "";
+           
+
+            oImg[5].src = "../img/folEspoire/mobile/accueil.png";
+            oImg[6].src = "../img/folEspoire/mobile/menu.png";            
+            oImg[7].src = "../img/folEspoire/mobile/roue.png";
+            oImg[8].src = "";
+
             break;
             
         case "2gauche":
@@ -44,6 +55,17 @@ function afficheProjet(x){
             parag2.innerHTML = "Durant l'été j'avais eu l'opportunité de faire un site web pour une compagnie de crème glacée. Malheureusment je ne connaissais pas toute les techniques afin que celui-ci soit de top qualité. J'ai donc décidé de lui refaire une refonte total lors de mon cours.";
             parag3.innerHTML = "Je travaillais seul durant la refont de ce projet. J'ai réaliser plusieurs tests utilisateurs afin de m'assurer du bon fonctionnement de mon design. Lors de la réalisation j'ai du adapter mon design à la programmation et j'ai décidé d'y ajouter du parallax.";
             parag4.innerHTML = "Technologie utilisée : HTML5, CSS3, JavaScript, PhotoShop, Illustrator ";
+
+            oImg[0].src = "../img/bilbo/design/accueil.png";
+            oImg[1].src = "";
+            oImg[2].src = "";
+            oImg[3].src = "";
+            oImg[4].src = "";
+
+            oImg[5].src = "../img/bilbo/design/accueilMobile.png";
+            oImg[6].src = "../img/bilbo/design/menu.png";
+            oImg[7].src = "../img/bilbo/design/contenue.png";
+            oImg[8].src = "";
             
             break;
         
@@ -55,7 +77,17 @@ function afficheProjet(x){
             parag3.innerHTML = "Malheureusement le site internet n'est pas responsive, mon client ne voulait pas que son site inernet soit responsive.";
             parag4.innerHTML = "Technologie utilisée : HTML5, CSS3, JavaScript, PhotoShop";
 
-           // oImg.src = oImgLondres;
+            oImg[0].src = "../img/bilbo/Web/accueil.png";
+            oImg[1].src = "../img/bilbo/Web/produit.png";
+            oImg[2].src = "../img/bilbo/Web/qui.png";
+            oImg[3].src = "../img/bilbo/Web/ou.png";
+
+            oImg[4].src = "";
+            oImg[5].src = "";
+            oImg[6].src = "";
+            oImg[7].src = "";
+            oImg[8].src = "";
+           
             break;
             
         case "1droite":
@@ -65,6 +97,18 @@ function afficheProjet(x){
             parag2.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
             parag3.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
             parag4.innerHTML = "Technologie utilisée : HTML5, CSS3, JavaScript, PhotoShop";
+
+            oImg[0].src = "../img/WebSphaera/accueilWeb.png";
+            oImg[1].src = "../img/WebSphaera/histoire.png";
+            oImg[2].src = "../img/WebSphaera/jouabilite.png";
+            oImg[3].src = "";
+            oImg[4].src = "";
+
+            oImg[5].src = "../img/WebSphaera/accueilMobile.png";
+            oImg[6].src = "../img/WebSphaera/menu.png";
+            oImg[7].src = "../img/WebSphaera/credit.png";
+            oImg[8].src = "";
+
             break;
 
         case "2droite":
@@ -75,7 +119,17 @@ function afficheProjet(x){
             parag3.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
             parag4.innerHTML = "Technologie utilisée : Unity 3D, C#";
             
-           // oImg.src = oImgLondres;
+            oImg[0].src = "../img/JeuSphaera/debut.png";
+            oImg[1].src = "../img/JeuSphaera/instructions.png";
+            oImg[2].src = "../img/JeuSphaera/jeuete.png";
+            oImg[3].src = "../img/JeuSphaera/jeuhiver1.png";
+            oImg[4].src = "../img/JeuSphaera/presentation.png";
+
+            oImg[5].src = "";
+            oImg[6].src = "";
+            oImg[7].src = "";
+            oImg[8].src = "";
+
             break;
             
         case "3droite":
@@ -85,6 +139,18 @@ function afficheProjet(x){
             parag2.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
             parag3.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis nunc laoreet, tincidunt dolor vel, tristique lorem. Quisque at sem vitae massa consequat vestibulum sed quis massa. Aliquam convallis mi et lorem fringilla posuere. Proin volutpat, eros id finibus mollis, diam leo porta metus, in sagittis turpis tellus a dui. ";
             parag4.innerHTML = "Technologie utilisée : Unity 3D, C#";
+
+            oImg[0].src = "../img/chickenRunScreenshot/accueil.png";
+            oImg[1].src = "../img/chickenRunScreenshot/jeu1.png";
+            oImg[2].src = "../img/chickenRunScreenshot/jeu2.png";
+            oImg[3].src = "../img/chickenRunScreenshot/jeu3.png";
+            oImg[4].src = "../img/chickenRunScreenshot/jeu4.png";
+
+            oImg[5].src = "";
+            oImg[6].src = "";
+            oImg[7].src = "";
+            oImg[8].src = "";
+
             break;
     }
 

@@ -512,7 +512,6 @@ font-family: 'Raleway', sans-serif;
 .menu a {
   text-decoration: none;
   color: #EEE5E9;
-  border-bottom: 1px solid white;
   font-size: 2.3rem;
   /*Au point de départ on met tous les éléments invisibles*/
   opacity: 0;
@@ -534,6 +533,7 @@ li {
   list-style: none;
   margin: 1.3rem;
   margin-right: 1.5rem;
+  margin-top: 0rem;
 }
 
 .boutonBurger {
@@ -543,7 +543,7 @@ li {
   /*Conteneur flex*/
   position: fixed;
   top: 1.2rem;
-  right: 1.5rem;
+  right: 1.2rem;
   display: -ms-grid;
   display: grid;
   -webkit-box-orient: vertical;
@@ -706,6 +706,7 @@ li {
 /*---------------------------------------------------------------
 
 ----------------------------------------------------------------*/
+/* Header */
 header {
   overflow: hidden;
 }
@@ -727,7 +728,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  transform: scale(1.01);
   -webkit-transition: all 1.35s ease-in-out;
   transition: all 1.35s ease-in-out;
 }
@@ -745,7 +746,7 @@ header {
   /* Duotone effect */
   .duotone {
     -webkit-filter: blur(2px);
-            filter: blur(2px);
+    filter: blur(2px);
     width: 100vw;
     height: 95vh;
     overflow: hidden;
@@ -756,7 +757,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-transform: scale(1.01);
-            transform: scale(1.01);
+    transform: scale(1.01);
     -webkit-transition: all 1.35s ease-in-out;
     transition: all 1.35s ease-in-out;
   }
@@ -783,13 +784,14 @@ header {
   .duotone:focus::before,
   .duotone:focus::after {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     -webkit-transform: scale(1.03);
-            transform: scale(1.03);
+    transform: scale(1.03);
     background-color: rgba(255, 255, 255, 0);
   }
 }
 
+/* Footer */
 a {
   text-decoration: none;
 }
@@ -800,17 +802,16 @@ footer {
 
 #fontAwsome {
   width: 220px;
+  margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
   height: auto;
-  margin: 0 auto;
   color: #EEE5E9;
   font-size: 1.3rem;
 }
 
 #fontAwsome a {
   margin: 0 auto;
-  margin-right: 15px;
   margin-left: 15px;
 }
 
@@ -818,6 +819,7 @@ footer {
   color: #A6808C;
 }
 
+/* Text hover  */
 .tooltip {
   position: relative;
   display: inline-block;
@@ -855,6 +857,7 @@ footer {
   visibility: visible;
 }
 
+/* Projet */
 #projets,
 #propos {
   margin-bottom: 50px;
@@ -878,6 +881,7 @@ footer {
   z-index: 90;
   background-color: rgba(57, 61, 82, 0.7);
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   height: 100%;
@@ -888,8 +892,9 @@ footer {
 #boite {
   color: #393d52;
   z-index: 91;
-  position: fixed;
-  top: 20%;
+  position: absolute;
+  top: 10%;
+  margin-bottom: 10%;
   left: 15%;
   height: auto;
   width: 70%;
@@ -903,6 +908,22 @@ footer {
 
 #boite h3 {
   margin-bottom: 25px;
+}
+
+.imagePop {
+  width: 100%;
+  height: auto;
+}
+
+.imagePopWeb {
+  width: 100%;
+  height: auto;
+}
+
+.imagePopMobile {
+  height: auto;
+  width: 32%;
+  margin: 0 auto;
 }
 
 .fermer {
@@ -1005,6 +1026,7 @@ footer {
   }
 }
 
+/* Propos */
 .droiteImg h3 {
   margin-top: 20px;
 }
@@ -1014,32 +1036,35 @@ footer {
   line-height: 35px;
 }
 
+.droiteImg {
+  height: auto;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 0px;
+          flex: 2 0 0;
+}
+
+.droiteImg img {
+  display: block;
+  width: 80%;
+  height: auto;
+  -webkit-box-shadow: 7px 7px 40px #393d52;
+          box-shadow: 7px 7px 40px #393d52;
+}
+
 /* ======== GRANDES ÉCRANS ============ */
 @media (min-width: 917px) {
   .gaucheTexte {
-    /* background-color: aqua;*/
     height: auto;
     -webkit-box-flex: 4;
         -ms-flex: 4 0 0px;
             flex: 4 0 0;
-    /* width: 59%;*/
     margin-right: 1%;
   }
   .droiteImg {
-    /* background-color: coral;*/
-    height: auto;
-    -webkit-box-flex: 2;
-        -ms-flex: 2 0 0px;
-            flex: 2 0 0;
-    /* width: 35%;*/
     padding-left: 5%;
   }
   .droiteImg img {
-    display: block;
     width: 100%;
-    height: auto;
-    -webkit-box-shadow: 7px 7px 40px #393d52;
-            box-shadow: 7px 7px 40px #393d52;
   }
 }
 
@@ -1855,8 +1880,12 @@ font-family: 'GFS Didot', serif;
 font-family: 'Raleway', sans-serif;
 */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1864,8 +1893,6 @@ body {
   background-color: #F1E0DE;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#F1E0DE), to(#EEE5E9));
   background-image: linear-gradient(to top right, #F1E0DE, #EEE5E9);
-  /* background: #EEE5E9 url(../img/point.png) repeat;
-    background-size: 4px 4px;*/
 }
 
 h1 {
@@ -1906,20 +1933,28 @@ h3 {
 }
 
 /* Scroll fire  */
-.projet, .gaucheTexte, .droiteImg, .container, .profil {
+.projet,
+.gaucheTexte,
+.droiteImg,
+.container,
+.profil {
   opacity: 0;
   -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  transform: translateY(50px);
   -webkit-transition: opacity 0.3s 0.25s ease-out, -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
   transition: opacity 0.3s 0.25s ease-out, -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
   transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
   transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out, -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
 }
 
-.projet.is-visible, .gaucheTexte.is-visible, .droiteImg.is-visible, .container.is-visible, .profil.is-visible {
+.projet.is-visible,
+.gaucheTexte.is-visible,
+.droiteImg.is-visible,
+.container.is-visible,
+.profil.is-visible {
   opacity: 1;
   -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 
 /* ======== TABLETTES ============ */
@@ -1937,11 +1972,10 @@ h3 {
   }
   .row {
     display: -ms-flexbox;
-    /* IE 10 */
     display: -webkit-box;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 0 5px;
   }
 }

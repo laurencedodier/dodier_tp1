@@ -1,16 +1,15 @@
 #projets,
 #propos {
     margin-bottom: 50px;
-  
 }
 
 #contenu {
-    
     width: 75%;
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }  
+
 .image {
     display: block;
     width: 100%;
@@ -22,17 +21,20 @@
     z-index: 90;
     background-color:  rgba(57, 61, 82, 0.7);
     position: fixed;
+    overflow-y: scroll;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     display: none;
   }
+
   #boite{
     color: #393d52;
     z-index: 91;
-    position: fixed;
-    top: 20%;
+    position: absolute;
+    top: 10%;
+    margin-bottom: 10%;
     left: 15%;
     height: auto;
     width: 70%;
@@ -45,6 +47,21 @@
 }
 #boite h3{
     margin-bottom: 25px;
+}
+
+.imagePop{
+    width: 100%;
+    height: auto;
+}
+
+.imagePopWeb{
+    width: 100%;
+    height: auto;
+}
+.imagePopMobile{
+    height: auto;
+    width: 32%;
+    margin: 0 auto;
 }
 
 .fermer{
@@ -72,7 +89,6 @@
     transform: translateY(-4px) rotate(-45deg);
     background-color: #EEE5E9;
 }
-
 
 /* ======== GRANDES ÉCRANS ============ */
 @media (min-width:917px) {
@@ -112,7 +128,7 @@
       }
       
       .survol {
-          cursor: pointer;
+        cursor: pointer;
         position: absolute;
         top: 0;
         bottom: 0;
