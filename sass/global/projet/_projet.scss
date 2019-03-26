@@ -50,11 +50,6 @@
     margin-bottom: 25px;
 }
 
-.imagePop {
-    width: 100%;
-    height: auto;
-}
-
 .imagePopWeb {
     width: 100%;
     height: auto;
@@ -62,7 +57,7 @@
 
 .imagePopMobile {
     height: auto;
-    width: 32%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -121,6 +116,18 @@
         -webkit-box-shadow: 3px 3px 5px #595b61;
         box-shadow: 3px 3px 5px #595b61;
     }
+
+    .imagePopWeb {
+        width: 100%;
+        height: auto;
+    }
+    
+    .imagePopMobile {
+        height: auto;
+        width: 32%;
+        margin: 0 auto;
+    }
+    
 
     /*   HOVER sur projets   */
     .projet {

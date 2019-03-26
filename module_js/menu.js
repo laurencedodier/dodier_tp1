@@ -30,7 +30,8 @@
     }
 
 /*
-*
+* Fonction qui permet de fermer le menu au click d'un choix
+* enleve la classe active sur le bouton burger
 *
 */
     function fermerBurger() {

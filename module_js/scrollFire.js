@@ -3,7 +3,7 @@ var scroll = window.requestAnimationFrame;
 var elementsToShow = document.querySelectorAll(".show-on-scroll");
 
 /*
-*
+* Fonction qui permet d'afficher et d'enlever la classe active sur un élément
 *
 */
 function loop() {
@@ -18,7 +18,7 @@ function loop() {
 }
 
 /*
-*
+* Fonction qui permet de détecter la hauteur du client afin de faire afficher les projets
 *
 */
 function isElementInViewport(el) {

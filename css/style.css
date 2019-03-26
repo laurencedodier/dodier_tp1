@@ -910,11 +910,6 @@ footer {
   margin-bottom: 25px;
 }
 
-.imagePop {
-  width: 100%;
-  height: auto;
-}
-
 .imagePopWeb {
   width: 100%;
   height: auto;
@@ -922,7 +917,7 @@ footer {
 
 .imagePopMobile {
   height: auto;
-  width: 32%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -934,8 +929,8 @@ footer {
   display: grid;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
   z-index: 99;
   width: 25px;
   height: 25px;
@@ -950,12 +945,12 @@ footer {
 
 .boutonX:first-child {
   -webkit-transform: translateY(8px) rotate(45deg);
-          transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .boutonX:last-child {
   -webkit-transform: translateY(-4px) rotate(-45deg);
-          transform: translateY(-4px) rotate(-45deg);
+  transform: translateY(-4px) rotate(-45deg);
   background-color: #EEE5E9;
 }
 
@@ -977,7 +972,16 @@ footer {
   .droite img {
     margin-top: 10%;
     -webkit-box-shadow: 3px 3px 5px #595b61;
-            box-shadow: 3px 3px 5px #595b61;
+    box-shadow: 3px 3px 5px #595b61;
+  }
+  .imagePopWeb {
+    width: 100%;
+    height: auto;
+  }
+  .imagePopMobile {
+    height: auto;
+    width: 32%;
+    margin: 0 auto;
   }
   /*   HOVER sur projets   */
   .projet {
@@ -985,7 +989,7 @@ footer {
     width: 100%;
     cursor: pointer;
     -webkit-filter: grayscale(40%);
-            filter: grayscale(40%);
+    filter: grayscale(40%);
   }
   .image {
     display: block;
@@ -1009,7 +1013,7 @@ footer {
   .projet:hover .survol {
     opacity: 1;
     -webkit-filter: none;
-            filter: none;
+    filter: none;
   }
   .texte {
     color: #EEE5E9;
@@ -1039,8 +1043,8 @@ footer {
 .droiteImg {
   height: auto;
   -webkit-box-flex: 2;
-      -ms-flex: 2 0 0px;
-          flex: 2 0 0;
+  -ms-flex: 2 0 0px;
+  flex: 2 0 0;
 }
 
 .droiteImg img {
@@ -1048,7 +1052,7 @@ footer {
   width: 80%;
   height: auto;
   -webkit-box-shadow: 7px 7px 40px #393d52;
-          box-shadow: 7px 7px 40px #393d52;
+  box-shadow: 7px 7px 40px #393d52;
 }
 
 /* ======== GRANDES ÉCRANS ============ */
@@ -1056,8 +1060,8 @@ footer {
   .gaucheTexte {
     height: auto;
     -webkit-box-flex: 4;
-        -ms-flex: 4 0 0px;
-            flex: 4 0 0;
+    -ms-flex: 4 0 0px;
+    flex: 4 0 0;
     margin-right: 1%;
   }
   .droiteImg {
@@ -1086,66 +1090,67 @@ section {
 @-webkit-keyframes etirerMot {
   from {
     -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
     opacity: 0.3;
   }
   30% {
     -webkit-transform: scale(1.5, 0.75);
-            transform: scale(1.5, 0.75);
+    transform: scale(1.5, 0.75);
   }
   40% {
     -webkit-transform: scale(0.75, 1.25);
-            transform: scale(0.75, 1.25);
+    transform: scale(0.75, 1.25);
   }
   50% {
     -webkit-transform: scale(1.15, 0.85);
-            transform: scale(1.15, 0.85);
+    transform: scale(1.15, 0.85);
     opacity: 1;
   }
   65% {
     -webkit-transform: scale(0.95, 1.05);
-            transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
   }
   75% {
     -webkit-transform: scale(1.05, 0.95);
-            transform: scale(1.05, 0.95);
+    transform: scale(1.05, 0.95);
   }
   to {
     -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
     opacity: 1;
   }
 }
+
 @keyframes etirerMot {
   from {
     -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
     opacity: 0.3;
   }
   30% {
     -webkit-transform: scale(1.5, 0.75);
-            transform: scale(1.5, 0.75);
+    transform: scale(1.5, 0.75);
   }
   40% {
     -webkit-transform: scale(0.75, 1.25);
-            transform: scale(0.75, 1.25);
+    transform: scale(0.75, 1.25);
   }
   50% {
     -webkit-transform: scale(1.15, 0.85);
-            transform: scale(1.15, 0.85);
+    transform: scale(1.15, 0.85);
     opacity: 1;
   }
   65% {
     -webkit-transform: scale(0.95, 1.05);
-            transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
   }
   75% {
     -webkit-transform: scale(1.05, 0.95);
-            transform: scale(1.05, 0.95);
+    transform: scale(1.05, 0.95);
   }
   to {
     -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
     opacity: 1;
   }
 }
@@ -1158,11 +1163,11 @@ section {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   -webkit-transform-origin: left center;
-          transform-origin: left center;
+  transform-origin: left center;
   opacity: 0.3;
   /*Animation*/
   -webkit-animation: etirerMot 750ms 250ms cubic-bezier(0.215, 0.61, 0.355, 1) both;
-          animation: etirerMot 750ms 250ms cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: etirerMot 750ms 250ms cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 .progress-bar {
@@ -1201,7 +1206,7 @@ section {
   background: transparent;
   height: 100%;
   -webkit-box-shadow: 0px 0px 10px #A6808C, 0px 0px 10px #ff80d9;
-          box-shadow: 0px 0px 10px #A6808C, 0px 0px 10px #ff80d9;
+  box-shadow: 0px 0px 10px #A6808C, 0px 0px 10px #ff80d9;
   z-index: -5;
 }
 
@@ -1225,7 +1230,7 @@ section {
   -webkit-animation: fill-1 0.5s ease-out 0s;
           animation: fill-1 0.5s ease-out 0s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   width: 0%;
 }
 
@@ -1233,7 +1238,7 @@ section {
   -webkit-animation: fill-2 0.5s ease-out 0.5s;
           animation: fill-2 0.5s ease-out 0.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   width: 0%;
 }
 
@@ -1241,7 +1246,7 @@ section {
   -webkit-animation: fill-3 0.5s ease-out 1s;
           animation: fill-3 0.5s ease-out 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   width: 0%;
 }
 
@@ -1249,7 +1254,7 @@ section {
   -webkit-animation: fill-4 0.5s ease-out 1.5s;
           animation: fill-4 0.5s ease-out 1.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   width: 0%;
 }
 
@@ -1257,7 +1262,7 @@ section {
   -webkit-animation: fill-5 0.5s ease-out 2s;
           animation: fill-5 0.5s ease-out 2s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   width: 0%;
 }
 
@@ -1265,7 +1270,7 @@ section {
   -webkit-animation: fill-6 0.5s ease-out 2.5s;
           animation: fill-6 0.5s ease-out 2.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   width: 0%;
 }
 
@@ -1273,7 +1278,7 @@ section {
   -webkit-animation: fill-7 0.5s ease-out 3s;
           animation: fill-7 0.5s ease-out 3s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   width: 0%;
 }
 
@@ -1281,7 +1286,7 @@ section {
   -webkit-animation: fill-8 0.5s ease-out 3.5s;
           animation: fill-8 0.5s ease-out 3.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   width: 0%;
 }
 
@@ -1289,7 +1294,7 @@ section {
   -webkit-animation: fill-9 0.5s ease-out 3s;
           animation: fill-9 0.5s ease-out 3s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   width: 0%;
 }
 
@@ -1297,7 +1302,7 @@ section {
   -webkit-animation: fill-10 0.5s ease-out 3.5s;
           animation: fill-10 0.5s ease-out 3.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   width: 0%;
 }
 
@@ -1485,7 +1490,7 @@ section {
   -webkit-animation: label 0.5s ease-out 0.5s;
           animation: label 0.5s ease-out 0.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
@@ -1493,7 +1498,7 @@ section {
   -webkit-animation: label 0.5s ease-out 1s;
           animation: label 0.5s ease-out 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
@@ -1501,7 +1506,7 @@ section {
   -webkit-animation: label 0.5s ease-out 1.5s;
           animation: label 0.5s ease-out 1.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
@@ -1509,7 +1514,7 @@ section {
   -webkit-animation: label 0.5s ease-out 2s;
           animation: label 0.5s ease-out 2s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
@@ -1517,7 +1522,7 @@ section {
   -webkit-animation: label 0.5s ease-out 0.5s;
           animation: label 0.5s ease-out 0.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
@@ -1525,7 +1530,7 @@ section {
   -webkit-animation: label 0.5s ease-out 1s;
           animation: label 0.5s ease-out 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
@@ -1533,7 +1538,7 @@ section {
   -webkit-animation: label 0.5s ease-out 1.5s;
           animation: label 0.5s ease-out 1.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
@@ -1541,7 +1546,7 @@ section {
   -webkit-animation: label 0.5s ease-out 2s;
           animation: label 0.5s ease-out 2s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
@@ -1549,7 +1554,7 @@ section {
   -webkit-animation: label 0.5s ease-out 0.5s;
           animation: label 0.5s ease-out 0.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
@@ -1557,7 +1562,7 @@ section {
   -webkit-animation: label 0.5s ease-out 1s;
           animation: label 0.5s ease-out 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
@@ -1565,12 +1570,12 @@ section {
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
   }
   100% {
     opacity: 0.9;
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
@@ -1578,21 +1583,22 @@ section {
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
   }
   100% {
     opacity: 0.9;
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body .wrapper {

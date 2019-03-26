@@ -9,8 +9,8 @@ var rotationTexte = function(el, rotation, temps) {
 };
 
 /*
-*
-*
+* fonction qui permet de faire une rotation du texte 
+* ajoute le texte et la class et "efface" le texte 
 */
 rotationTexte.prototype.tick = function() {
   var i = this.numBoucle % this.rotation.length;
@@ -39,7 +39,7 @@ rotationTexte.prototype.tick = function() {
   }
 
 /*
-*
+* Fonction qui permet de savoir si le temps est écoulé ou pas
 *
 */
   setTimeout(function() {
@@ -48,8 +48,8 @@ rotationTexte.prototype.tick = function() {
 };
 
 /*
-*
-*
+* fonction qui s'exécute au moment de l'ouverture de la page
+* permet de faire une rotation du texte selon le temps
 */
 window.onload = function() {
   var elements = document.getElementsByClassName('txt-rotate');
@@ -60,7 +60,7 @@ window.onload = function() {
       new rotationTexte(elements[i], JSON.parse(rotation), temps);
     }
   }
-  // INJECT CSS
+  // ajoute le CSS
   var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
