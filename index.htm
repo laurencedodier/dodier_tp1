@@ -1,329 +1,334 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Doit être en commentaire en serveur local, pour que ce soit fonctionnelle sur gcloud enlever commentaire avant push -->
     <!--base href="https://portfolio-232515.appspot.com/"-->
-    
+
     <title> Laurence Dodier </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
- 
+
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=GFS+Didot|Raleway|Thasadith" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Roboto" rel="stylesheet">
-    
+
 </head>
 
 <body>
-        <header> <!-- Page accueil -->
-                <div class="duotone darken lighten" id='hero-1' ontouchstart="" ontouchend="" onmouseover=""></div>
-                <div id="nom">  
-                    <h1> LAURENCE DODIER </h1>
-                    <h2>Front end web
-                        <span class="txt-rotate" data-period="3000" data-rotate='[ "designer.", "developer."]'></span>
-                    </h2>
-                    
-                </div>
-                
-            </header>
-            <div> <!-- Bouton burger -->
-                    <input type="checkbox" id="chkBoutonBurger" />
-                    <div>
-                        <label for="chkBoutonBurger" class="boutonBurger">
-                            <div class="boutonBurger croix">
-                                <div class="ligne"></div>
-                                <div class="ligne"></div>
-                                <div class="ligne"></div>
-                            </div>
-                        </label>
-                    </div>
-                    <nav class="menu">
-                        <li>
-                            <a href="#"> Accueil </a>
-                        </li>
-                        <li>
-                            <a href="#projets"> Projets </a>
-                        </li>
-                        <li>
-                            <a href="#propos"> À propos </a>
-                        </li>
-                    </nav>
-                </div>
+    <header>
+        <!-- Page accueil -->
+        <div class="duotone darken lighten" id='hero-1' ontouchstart="" ontouchend="" onmouseover=""></div>
+        <div id="nom">
+            <h1> LAURENCE DODIER </h1>
+            <h2>Front end web
+                <span class="txt-rotate" data-period="3000" data-rotate='[ "designer.", "developer."]'></span>
+            </h2>
 
-                <div id="global">
-                        <div id="projets">
-                            <h3> Projets </h3>
-                            <div id="contenu">
-                              <!-- Boite style pop-up qui présente un projet -->
-                                <div id="presentation">
-                                    <div id="boite">
-                                        <div class="fermer">
-                                            <div class="boutonX"></div>
-                                            <div class="boutonX"></div>
-                                        </div>
-                                        <h2 class="titre">Developpement de jeu</h2>
-                                        <h3 class="sousTitre">Automne 2018 ▸ Unity 3D  </h3>
-                                        <div id="contenu">
-                                                <p class="parag1"> 
-                                                </p>
-                                                <p class="parag2"> 
-                                                </p>
-                                                <p class="parag3"> 
-                                                </p>
-                                                <p class="parag4"> 
-                                                </p>
-                                                <img id="img1" class="imagePopWeb" src="" >
-                                                <img id="img1" class="imagePopWeb" src="" >
-                                                <img id="img1" class="imagePopWeb" src="" >
-                                                <img id="img1" class="imagePopWeb" src="" >
-                                                <img id="img1" class="imagePopWeb" src="" >
+        </div>
 
-                                                <img id="img1" class="imagePopMobile" src="" >
-                                                <img id="img1" class="imagePopMobile" src="" >
-                                                <img id="img1" class="imagePopMobile" src="" >
-                                                <img id="img1" class="imagePopMobile" src="" >
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Projets en rangé -->
-                                <div class="row">
-                                    <div class="gauche">
-                                      <!-- Le fol Espoir ⋄ Site web -->
-                                        <div class="projet show-on-scroll">
-                                            <img class="image" src="img/folEspoire/web/accueil.jpg" >
-                                            <div class="survol">
-                                                <div class="texte">
-                                                    <p>
-                                                            <b>Le fol Espoir ⋄ Site web</b><br>
-                                                            Automne 2018 <br>
-                                                    </p>
-                                                   
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Bilboquet ⋄ Refonte du site web -->
-                                        <div class="projet show-on-scroll">
-                                             <img class="image" src="img/bilbo/design/accueilMobile.png" >
-                                             <div class="survol">
-                                                  <div class="texte">
-                                                        <p>
-                                                          <b>Bilboquet ⋄ Refonte du site web</b>  <br>
-                                                            Automne 2017 <br>
-                                                      </p>
-                                                  </div>
-                                             </div>
-                                        </div>
-                                        <!-- Bilboquet ⋄ Site web -->
-                                        <div class="projet show-on-scroll">
-                                            <img class="image" src="img/bilbo/Web/accueil.png" >
-                                            <div class="survol">
-                                                <div class="texte">
-                                                    <p>
-                                                        <b>Bilboquet ⋄ Site web</b>  <br>
-                                                        Été 2017 <br>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Sphaera ⋄ Site web -->
-                                    <div class="droite">
-                                        <div class="projet show-on-scroll">
-                                            <img class="image" src="img/photo1.png" >
-                                            <div class="survol">
-                                                 <div class="texte">
-                                                    <p>
-                                                        <b>Sphaera ⋄ Site web</b>  <br>
-                                                        Automne 2018 <br>
-                                                    </p>
-                                                 </div>
-                                            </div>
-                                       </div>
-                                       <!-- Sphaera ⋄ Jeu  -->
-                                       <div class="projet show-on-scroll">
-                                        <img class="image" src="img/JeuSphaera/debut.png" >
-                                        <div class="survol">
-                                             <div class="texte">
-                                                <p>
-                                                    <b>Sphaera ⋄ Jeu</b>  <br>
-                                                    Automne 2018 <br>
-                                                </p>
-                                             </div>
-                                        </div>
-                                   </div>
-                                   <!-- ChickenRun ⋄ Jeu -->
-                                   <div class="projet show-on-scroll">
-                                        <img class="image" src="img/chickenRunScreenshot/affiche.jpg" >
-                                        <div class="survol">
-                                             <div class="texte">
-                                                <p>
-                                                    <b>ChickenRun ⋄ Jeu</b> <br>
-                                                    Hiver 2018 <br>
-                                                </p>
-                                             </div>
-                                         </div>  
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
+    </header>
+    <div>
+        <!-- Bouton burger -->
+        <input type="checkbox" id="chkBoutonBurger" />
+        <div>
+            <label for="chkBoutonBurger" class="boutonBurger">
+                <div class="boutonBurger croix">
+                    <div class="ligne"></div>
+                    <div class="ligne"></div>
+                    <div class="ligne"></div>
+                </div>
+            </label>
+        </div>
+        <nav class="menu">
+            <li>
+                <a href="#"> Accueil </a>
+            </li>
+            <li>
+                <a href="#projets"> Projets </a>
+            </li>
+            <li>
+                <a href="#propos"> À propos </a>
+            </li>
+        </nav>
+    </div>
+
+    <div id="global">
+        <div id="projets">
+            <h3> Projets </h3>
+            <div id="contenu">
+                <!-- Boite style pop-up qui présente un projet -->
+                <div id="presentation">
+                    <div id="boite">
+                        <div class="fermer">
+                            <div class="boutonX"></div>
+                            <div class="boutonX"></div>
                         </div>
+                        <h2 class="titre">Developpement de jeu</h2>
+                        <h3 class="sousTitre">Automne 2018 ▸ Unity 3D </h3>
+                        <div id="contenu">
+                            <p class="parag1">
+                            </p>
+                            <p class="parag2">
+                            </p>
+                            <p class="parag3">
+                            </p>
+                            <p class="parag4">
+                            </p>
+                            <img id="img1" class="imagePopWeb" src="">
+                            <img id="img1" class="imagePopWeb" src="">
+                            <img id="img1" class="imagePopWeb" src="">
+                            <img id="img1" class="imagePopWeb" src="">
+                            <img id="img1" class="imagePopWeb" src="">
 
-                        <!-- À Propos -->
-                        <div id="propos">
-                            <h3> À propos </h3>
-                            <div id="contenu">
-                                <div class="row">
-                                    <div class="gaucheTexte show-on-scroll">
-                                            <!-- Qualités intéractive -->
-                                            <h3>
-                                                   Découvre mes qualités, appuie n'importe où dans la section ci-dessous !
-                                            </h3>
-                                            <section id="section"> </section>
-
-                                            <!-- Niveaux de compétences -->
-                                            <div class="wrapper">
-                                                <!-- HTML5 -->
-                                                <div class="container show-on-scroll">
-                                                  <div class="label one">HTML5</div>
-                                                  <div class="progress-bar">
-                                                    <div class="progress fill-1">
-                                                      <div class="glow"></div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <!-- CSS3 -->
-                                                <div class="container show-on-scroll">
-                                                  <div class="label two">CSS3</div>
-                                                  <div class="progress-bar">
-                                                    <div class="progress fill-2">
-                                                      <div class="glow"></div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <!-- JavaScript -->
-                                                <div class="container show-on-scroll">
-                                                  <div class="label three">JavaScript</div>
-                                                  <div class="progress-bar">
-                                                    <div class="progress fill-3">
-                                                      <div class="glow"></div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                  <!-- PHP -->
-                                                <div class="container show-on-scroll">
-                                                    <div class="label four">PHP</div>
-                                                    <div class="progress-bar">
-                                                      <div class="progress fill-4">
-                                                        <div class="glow"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <!-- MySQL -->
-                                                  <div class="container show-on-scroll">
-                                                    <div class="label five">MySQL</div>
-                                                    <div class="progress-bar">
-                                                      <div class="progress fill-5">
-                                                        <div class="glow"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <!-- Sass -->
-                                                  <div class="container show-on-scroll">
-                                                    <div class="label six">Sass</div>
-                                                    <div class="progress-bar">
-                                                      <div class="progress fill-6">
-                                                        <div class="glow"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                    <!-- PhotoShop -->
-                                                  <div class="container show-on-scroll">
-                                                    <div class="label seven">PhotoShop</div>
-                                                    <div class="progress-bar">
-                                                      <div class="progress fill-7">
-                                                        <div class="glow"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                    <!-- Illustrator -->
-                                                  <div class="container show-on-scroll">
-                                                    <div class="label height">Illustrator</div>
-                                                    <div class="progress-bar">
-                                                      <div class="progress fill-8">
-                                                        <div class="glow"></div>
-                                                      </div>
-                                                    </div>
-                                                </div>
-                                                  <!-- Github -->
-                                                <div class="container show-on-scroll">
-                                                  <div class="label nine">Github</div>
-                                                  <div class="progress-bar">
-                                                    <div class="progress fill-9">
-                                                      <div class="glow"></div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                  <!-- Google Cloud Platform ⋄ App Engine -->
-                                                <div class="container show-on-scroll">
-                                                  <div class="label ten">Google Cloud Platform ⋄ App Engine</div>
-                                                  <div class="progress-bar">
-                                                    <div class="progress fill-10">
-                                                      <div class="glow"></div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                    </div>
-
-                                    <div class="droiteImg show-on-scroll"> 
-                                        <img src="img/laurence.png" alt="Une image">
-                                        <h3>Qui suis-je ?</h3>
-                                        <p class="profil show-on-scroll">
-                                            En tant que programmeuse junior j’aime
-                                            relevé des défis et je cherche constamment à
-                                            m’améliorer. Je suis ponctuelle, persévérante,
-                                            autonome, créative et curieuse. Je m’intègre
-                                            facilement dans une nouvelle équipe et je
-                                            serais heureuse de partager mes
-                                            connaissances afin de vous aider dans
-                                            l’atteinte de vos objectifs. 
+                            <img id="img1" class="imagePopMobile" src="">
+                            <img id="img1" class="imagePopMobile" src="">
+                            <img id="img1" class="imagePopMobile" src="">
+                            <img id="img1" class="imagePopMobile" src="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Projets en rangé -->
+                <div class="row">
+                    <div class="gauche">
+                        <!-- Le fol Espoir ⋄ Site web -->
+                        <div class="projet show-on-scroll">
+                            <img class="image" src="img/folEspoire/web/accueil.jpg">
+                            <div class="survol">
+                                <div class="texte">
+                                    <p>
+                                        <b>Le fol Espoir ⋄ Site web</b><br>
+                                        Automne 2018 <br>
                                     </p>
-                                    <p class="profil show-on-scroll">Au plaisir de se rencontrer ! :)</p>
-                                    </div>
-                                    
-                                </div>
 
-                                
-                             
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Bilboquet ⋄ Refonte du site web -->
+                        <div class="projet show-on-scroll">
+                            <img class="image" src="img/bilbo/design/accueilMobile.png">
+                            <div class="survol">
+                                <div class="texte">
+                                    <p>
+                                        <b>Bilboquet ⋄ Refonte du site web</b> <br>
+                                        Automne 2017 <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Bilboquet ⋄ Site web -->
+                        <div class="projet show-on-scroll">
+                            <img class="image" src="img/bilbo/Web/accueil.png">
+                            <div class="survol">
+                                <div class="texte">
+                                    <p>
+                                        <b>Bilboquet ⋄ Site web</b> <br>
+                                        Été 2017 <br>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                
-                    <footer> <!-- Me rejoindre -->
-                            <div id="fontAwsome">
-                                <a href="https://www.linkedin.com/in/laurence-dodier-a563a7175/" target="blank" class="fab fa-linkedin tooltip">
-                                  <span class="tooltiptext">Stalker ;)</span>
-                                </a>
-                                <a href="mailto:laurence.dodier@icloud.com" class="fas fa-envelope tooltip">
-                                    <span class="tooltiptext">Contacter :)</span>
-                                </a>
-                                <a href="DodierLaurence.pdf" download class="fas fa-file-pdf tooltip">
-                                    <span class="tooltiptext">Téléchargez CV </span>
-                                </a>
+                    <!-- Sphaera ⋄ Site web -->
+                    <div class="droite">
+                        <div class="projet show-on-scroll">
+                            <img class="image" src="img/photo1.png">
+                            <div class="survol">
+                                <div class="texte">
+                                    <p>
+                                        <b>Sphaera ⋄ Site web</b> <br>
+                                        Automne 2018 <br>
+                                    </p>
+                                </div>
                             </div>
-                        </footer>
-    
-                        <!-- Script JavaScript -->
-                        <script type='module' src="./module_js/menu.js"></script>
-                        <script type='module' src="./module_js/texte.js"></script>
-                        <script type='module' src="./module_js/afficheProjet.js"></script>
-                        <script type='module' src="./module_js/Mot.js"></script>
-                        <script type='module' src="./module_js/application.js"></script>
-                        <script type='module' src="./module_js/scrollFire.js"></script>
-                       
+                        </div>
+                        <!-- Sphaera ⋄ Jeu  -->
+                        <div class="projet show-on-scroll">
+                            <img class="image" src="img/JeuSphaera/debut.png">
+                            <div class="survol">
+                                <div class="texte">
+                                    <p>
+                                        <b>Sphaera ⋄ Jeu</b> <br>
+                                        Automne 2018 <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ChickenRun ⋄ Jeu -->
+                        <div class="projet show-on-scroll">
+                            <img class="image" src="img/chickenRunScreenshot/affiche.jpg">
+                            <div class="survol">
+                                <div class="texte">
+                                    <p>
+                                        <b>ChickenRun ⋄ Jeu</b> <br>
+                                        Hiver 2018 <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- À Propos -->
+        <div id="propos">
+            <h3> À propos </h3>
+            <div id="contenu">
+                <div class="row">
+                    <div class="gaucheTexte show-on-scroll">
+                        <!-- Qualités intéractive -->
+                        <h3>
+                            Découvre mes qualités, appuie n'importe où dans la section ci-dessous !
+                        </h3>
+                        <section id="section"> </section>
+
+                        <!-- Niveaux de compétences -->
+                        <div class="wrapper">
+                            <!-- HTML5 -->
+                            <div class="container show-on-scroll">
+                                <div class="label one">HTML5</div>
+                                <div class="progress-bar">
+                                    <div class="progress fill-1">
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CSS3 -->
+                            <div class="container show-on-scroll">
+                                <div class="label two">CSS3</div>
+                                <div class="progress-bar">
+                                    <div class="progress fill-2">
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- JavaScript -->
+                            <div class="container show-on-scroll">
+                                <div class="label three">JavaScript</div>
+                                <div class="progress-bar">
+                                    <div class="progress fill-3">
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- PHP -->
+                            <div class="container show-on-scroll">
+                                <div class="label four">PHP</div>
+                                <div class="progress-bar">
+                                    <div class="progress fill-4">
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- MySQL -->
+                            <div class="container show-on-scroll">
+                                <div class="label five">MySQL</div>
+                                <div class="progress-bar">
+                                    <div class="progress fill-5">
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sass -->
+                            <div class="container show-on-scroll">
+                                <div class="label six">Sass</div>
+                                <div class="progress-bar">
+                                    <div class="progress fill-6">
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- PhotoShop -->
+                            <div class="container show-on-scroll">
+                                <div class="label seven">PhotoShop</div>
+                                <div class="progress-bar">
+                                    <div class="progress fill-7">
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Illustrator -->
+                            <div class="container show-on-scroll">
+                                <div class="label height">Illustrator</div>
+                                <div class="progress-bar">
+                                    <div class="progress fill-8">
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Github -->
+                            <div class="container show-on-scroll">
+                                <div class="label nine">Github</div>
+                                <div class="progress-bar">
+                                    <div class="progress fill-9">
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Google Cloud Platform ⋄ App Engine -->
+                            <div class="container show-on-scroll">
+                                <div class="label ten">Google Cloud Platform ⋄ App Engine</div>
+                                <div class="progress-bar">
+                                    <div class="progress fill-10">
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="droiteImg show-on-scroll">
+                        <img src="img/laurence.png" alt="Une image">
+                        <h3>Qui suis-je ?</h3>
+                        <p class="profil show-on-scroll">
+                            En tant que programmeuse junior j’aime
+                            relevé des défis et je cherche constamment à
+                            m’améliorer. Je suis ponctuelle, persévérante,
+                            autonome, créative et curieuse. Je m’intègre
+                            facilement dans une nouvelle équipe et je
+                            serais heureuse de partager mes
+                            connaissances afin de vous aider dans
+                            l’atteinte de vos objectifs.
+                        </p>
+                        <p class="profil show-on-scroll">Au plaisir de se rencontrer ! :)</p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Me rejoindre -->
+        <div id="fontAwsome">
+            <a href="https://www.linkedin.com/in/laurence-dodier-a563a7175/" target="blank" class="fab fa-linkedin tooltip">
+                <span class="tooltiptext">Stalker ;)</span>
+            </a>
+            <a href="mailto:laurence.dodier@icloud.com" class="fas fa-envelope tooltip">
+                <span class="tooltiptext">Contacter :)</span>
+            </a>
+            <a href="DodierLaurence.pdf" download class="fas fa-file-pdf tooltip">
+                <span class="tooltiptext">Téléchargez CV </span>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script type='module' src="./module_js/menu.js"></script>
+    <script type='module' src="./module_js/texte.js"></script>
+    <script type='module' src="./module_js/afficheProjet.js"></script>
+    <script type='module' src="./module_js/Mot.js"></script>
+    <script type='module' src="./module_js/application.js"></script>
+    <script type='module' src="./module_js/scrollFire.js"></script>
+
 </body>
+
 </html>

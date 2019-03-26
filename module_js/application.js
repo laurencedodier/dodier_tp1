@@ -16,6 +16,10 @@
 
 	}, false);
 	
+    /*
+    *
+    *
+    */
 	function mettreDesMots(evt) {
 		console.log(evt);
 		//Identifier où le mousedown a eu lieu dans la section

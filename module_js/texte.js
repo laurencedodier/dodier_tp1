@@ -8,6 +8,10 @@ var rotationTexte = function(el, rotation, temps) {
   this.effacer = false;
 };
 
+/*
+*
+*
+*/
 rotationTexte.prototype.tick = function() {
   var i = this.numBoucle % this.rotation.length;
   var fullTxt = this.rotation[i];
@@ -34,11 +38,19 @@ rotationTexte.prototype.tick = function() {
     delta = 200;
   }
 
+/*
+*
+*
+*/
   setTimeout(function() {
     that.tick();
   }, delta);
 };
 
+/*
+*
+*
+*/
 window.onload = function() {
   var elements = document.getElementsByClassName('txt-rotate');
   for (var i=0; i<elements.length; i++) {

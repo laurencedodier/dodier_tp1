@@ -1,3 +1,7 @@
+/*
+*
+*
+*/
 (function(){
     var projet = document.querySelectorAll(".projet");
 
@@ -11,10 +15,12 @@
 
     var fermer = document.querySelector(".fermer");
     fermer.addEventListener("click", function(){fermerProjet()});
-
-
 })()
 
+/*
+*
+*
+*/
 function afficheProjet(x){
     var titre = document.querySelector(".titre");
     var sousTitre = document.querySelector(".sousTitre");
@@ -40,7 +46,6 @@ function afficheProjet(x){
             oImg[3].src = "";
             oImg[4].src = "";
            
-
             oImg[5].src = "../img/folEspoire/mobile/accueil.png";
             oImg[6].src = "../img/folEspoire/mobile/menu.png";            
             oImg[7].src = "../img/folEspoire/mobile/roue.png";
@@ -155,7 +160,11 @@ function afficheProjet(x){
     }
 
 }
-   
+
+/*
+*
+*
+*/
 function fermerProjet(){
     document.querySelector("#presentation").style.display="none";
 }

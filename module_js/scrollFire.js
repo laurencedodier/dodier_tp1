@@ -2,6 +2,10 @@ var scroll = window.requestAnimationFrame;
 
 var elementsToShow = document.querySelectorAll(".show-on-scroll");
 
+/*
+*
+*
+*/
 function loop() {
 	elementsToShow.forEach(element => {
 		if (isElementInViewport(element)) {
@@ -13,6 +17,10 @@ function loop() {
 	scroll(loop);
 }
 
+/*
+*
+*
+*/
 function isElementInViewport(el) {
 	var rect = el.getBoundingClientRect();
 	return (

@@ -1,16 +1,15 @@
 /*
-      			Contrôler l'aspect actif/inactif du bouton burger
-      		*/
+* Contrôler l'aspect actif/inactif du bouton burger
+*
+*/
 (function () { //IIFE
 
     //Permet d'attribuer ou non la classe estActif aux éléments
-
     var menu = document.querySelectorAll(".boutonBurger");
     var nbBoutons = menu.length;
 
     for (var i = 0; i < nbBoutons; i++) {
         //Mettre un gestionnaire d'événement pour attribuer/enlever la classe estActif
-
         menu[i].addEventListener("click", function () {
             this.classList.toggle("estActif");
         }, false);
@@ -30,8 +29,10 @@
         }, false);
     }
 
-
-
+/*
+*
+*
+*/
     function fermerBurger() {
 
         var menu = document.querySelectorAll(".boutonBurger");
@@ -41,9 +42,7 @@
             if (menu[i].classList.contains("estActif")) {
                 menu[i].classList.remove("estActif");
             }
-
         }
-
     }
 
 })(); //Fin IIFE
